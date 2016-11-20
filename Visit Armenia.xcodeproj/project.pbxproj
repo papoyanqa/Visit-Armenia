@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21E080683779BE5AF19C284B /* Pods_Visit_Armenia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34934D254B10F747611DCE69 /* Pods_Visit_Armenia.framework */; };
+		573C61F21DD739040038ECE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573C61F11DD739040038ECE4 /* AppDelegate.swift */; };
+		573C61F41DD739040038ECE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573C61F31DD739040038ECE4 /* ViewController.swift */; };
+		573C61F71DD739050038ECE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 573C61F51DD739050038ECE4 /* Main.storyboard */; };
+		573C61F91DD739050038ECE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 573C61F81DD739050038ECE4 /* Assets.xcassets */; };
+		573C61FC1DD739050038ECE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 573C61FA1DD739050038ECE4 /* LaunchScreen.storyboard */; };
+		573C62061DD7396C0038ECE4 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573C62051DD7396C0038ECE4 /* SWRevealViewController.m */; };
+		573C62081DD73A7C0038ECE4 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573C62071DD73A7C0038ECE4 /* HomeVC.swift */; };
+		573C620A1DD73BF30038ECE4 /* SlideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573C62091DD73BF30038ECE4 /* SlideTableViewController.swift */; };
+		573C620C1DD895CA0038ECE4 /* ShoppingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573C620B1DD895CA0038ECE4 /* ShoppingVC.swift */; };
+		573C620E1DD895EB0038ECE4 /* NearbyPlacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573C620D1DD895EB0038ECE4 /* NearbyPlacesVC.swift */; };
+		573C62101DD896360038ECE4 /* RestaurantsAndCafesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573C620F1DD896360038ECE4 /* RestaurantsAndCafesVC.swift */; };
+		573C62131DD89DDB0038ECE4 /* First Loading Splashscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C62121DD89DDB0038ECE4 /* First Loading Splashscreen.png */; };
+		573C62271DD89E540038ECE4 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 573C62151DD89E540038ECE4 /* Contents.json */; };
+		573C62281DD89E540038ECE4 /* Icon-App-20x20@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C62161DD89E540038ECE4 /* Icon-App-20x20@1x.png */; };
+		573C62291DD89E540038ECE4 /* Icon-App-20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C62171DD89E540038ECE4 /* Icon-App-20x20@2x.png */; };
+		573C622A1DD89E540038ECE4 /* Icon-App-20x20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C62181DD89E540038ECE4 /* Icon-App-20x20@3x.png */; };
+		573C622B1DD89E540038ECE4 /* Icon-App-29x29@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C62191DD89E540038ECE4 /* Icon-App-29x29@1x.png */; };
+		573C622C1DD89E540038ECE4 /* Icon-App-29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C621A1DD89E540038ECE4 /* Icon-App-29x29@2x.png */; };
+		573C622D1DD89E540038ECE4 /* Icon-App-29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C621B1DD89E540038ECE4 /* Icon-App-29x29@3x.png */; };
+		573C622E1DD89E540038ECE4 /* Icon-App-40x40@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C621C1DD89E540038ECE4 /* Icon-App-40x40@1x.png */; };
+		573C622F1DD89E540038ECE4 /* Icon-App-40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C621D1DD89E540038ECE4 /* Icon-App-40x40@2x.png */; };
+		573C62301DD89E540038ECE4 /* Icon-App-40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C621E1DD89E540038ECE4 /* Icon-App-40x40@3x.png */; };
+		573C62311DD89E540038ECE4 /* Icon-App-57x57@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C621F1DD89E540038ECE4 /* Icon-App-57x57@1x.png */; };
+		573C62321DD89E540038ECE4 /* Icon-App-60x60@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C62201DD89E540038ECE4 /* Icon-App-60x60@1x.png */; };
+		573C62331DD89E540038ECE4 /* Icon-App-60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C62211DD89E540038ECE4 /* Icon-App-60x60@2x.png */; };
+		573C62341DD89E540038ECE4 /* Icon-App-60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C62221DD89E540038ECE4 /* Icon-App-60x60@3x.png */; };
+		573C62351DD89E540038ECE4 /* Icon-App-76x76@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C62231DD89E540038ECE4 /* Icon-App-76x76@1x.png */; };
+		573C62361DD89E540038ECE4 /* Icon-App-76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C62241DD89E540038ECE4 /* Icon-App-76x76@2x.png */; };
+		573C62371DD89E540038ECE4 /* Icon-App-76x76@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C62251DD89E540038ECE4 /* Icon-App-76x76@3x.png */; };
+		573C62381DD89E540038ECE4 /* Icon-App-83.5x83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C62261DD89E540038ECE4 /* Icon-App-83.5x83.5@2x.png */; };
+		573C623A1DD8A0F30038ECE4 /* MainPageBackgroun_opera.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C62391DD8A0F30038ECE4 /* MainPageBackgroun_opera.png */; };
+		573C623C1DD8A3620038ECE4 /* SlideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573C623B1DD8A3620038ECE4 /* SlideTableViewCell.swift */; };
+		573C623E1DD8A94D0038ECE4 /* EventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573C623D1DD8A94D0038ECE4 /* EventsVC.swift */; };
+		573C62401DD8A9820038ECE4 /* PopularItinerariesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573C623F1DD8A9820038ECE4 /* PopularItinerariesVC.swift */; };
+		573C62421DD8A9A70038ECE4 /* TaxiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573C62411DD8A9A70038ECE4 /* TaxiVC.swift */; };
+		573C62441DD8A9CA0038ECE4 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573C62431DD8A9CA0038ECE4 /* SettingsVC.swift */; };
+		573C62481DD8AA050038ECE4 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573C62471DD8AA050038ECE4 /* AboutVC.swift */; };
+		573C62551DD8AD870038ECE4 /* About_100px.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C624A1DD8AD870038ECE4 /* About_100px.png */; };
+		573C62561DD8AD870038ECE4 /* ChristmasStar_100px.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C624B1DD8AD870038ECE4 /* ChristmasStar_100px.png */; };
+		573C62571DD8AD870038ECE4 /* DiningRoom_100px.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C624C1DD8AD870038ECE4 /* DiningRoom_100px.png */; };
+		573C62581DD8AD870038ECE4 /* Home_100px_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C624D1DD8AD870038ECE4 /* Home_100px_1.png */; };
+		573C625A1DD8AD870038ECE4 /* Marker_100px.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C624F1DD8AD870038ECE4 /* Marker_100px.png */; };
+		573C625B1DD8AD870038ECE4 /* Menu_100px_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C62501DD8AD870038ECE4 /* Menu_100px_1.png */; };
+		573C625C1DD8AD870038ECE4 /* ShoppingBag_100px.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C62511DD8AD870038ECE4 /* ShoppingBag_100px.png */; };
+		573C625D1DD8AD870038ECE4 /* Suitcase_100px.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C62521DD8AD870038ECE4 /* Suitcase_100px.png */; };
+		573C625E1DD8AD870038ECE4 /* Support_100px.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C62531DD8AD870038ECE4 /* Support_100px.png */; };
+		573C625F1DD8AD870038ECE4 /* Taxi_100px.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C62541DD8AD870038ECE4 /* Taxi_100px.png */; };
+		57A85C111DDCB29400E33879 /* Idea_100px.png in Resources */ = {isa = PBXBuildFile; fileRef = 57A85C101DDCB29400E33879 /* Idea_100px.png */; };
+		57E41CE91DD9F356003F6485 /* Garni.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 57E41CE61DD9F356003F6485 /* Garni.jpg */; };
+		57E41CEA1DD9F356003F6485 /* Yerevan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 57E41CE71DD9F356003F6485 /* Yerevan.jpg */; };
+		57E41CEB1DD9F356003F6485 /* tatev_monastery.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 57E41CE81DD9F356003F6485 /* tatev_monastery.jpg */; };
+		57E41CEE1DDB10C3003F6485 /* MyTripCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E41CED1DDB10C3003F6485 /* MyTripCollectionVC.swift */; };
+		57E41CF01DDB1220003F6485 /* MyTripCVcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E41CEF1DDB1220003F6485 /* MyTripCVcell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2221B379B8981EBD9C79BCE9 /* Pods-Visit Armenia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Visit Armenia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Visit Armenia/Pods-Visit Armenia.debug.xcconfig"; sourceTree = "<group>"; };
+		34934D254B10F747611DCE69 /* Pods_Visit_Armenia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Visit_Armenia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		573C61EE1DD739040038ECE4 /* Visit Armenia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Visit Armenia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		573C61F11DD739040038ECE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		573C61F31DD739040038ECE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		573C61F61DD739050038ECE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		573C61F81DD739050038ECE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		573C61FB1DD739050038ECE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		573C61FD1DD739050038ECE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		573C62031DD7396C0038ECE4 /* Visit Armenia-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Visit Armenia-Bridging-Header.h"; sourceTree = "<group>"; };
+		573C62041DD7396C0038ECE4 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		573C62051DD7396C0038ECE4 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		573C62071DD73A7C0038ECE4 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		573C62091DD73BF30038ECE4 /* SlideTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideTableViewController.swift; path = ../SlideTableViewController.swift; sourceTree = "<group>"; };
+		573C620B1DD895CA0038ECE4 /* ShoppingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingVC.swift; sourceTree = "<group>"; };
+		573C620D1DD895EB0038ECE4 /* NearbyPlacesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesVC.swift; sourceTree = "<group>"; };
+		573C620F1DD896360038ECE4 /* RestaurantsAndCafesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantsAndCafesVC.swift; sourceTree = "<group>"; };
+		573C62121DD89DDB0038ECE4 /* First Loading Splashscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "First Loading Splashscreen.png"; sourceTree = "<group>"; };
+		573C62151DD89E540038ECE4 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		573C62161DD89E540038ECE4 /* Icon-App-20x20@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@1x.png"; sourceTree = "<group>"; };
+		573C62171DD89E540038ECE4 /* Icon-App-20x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@2x.png"; sourceTree = "<group>"; };
+		573C62181DD89E540038ECE4 /* Icon-App-20x20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@3x.png"; sourceTree = "<group>"; };
+		573C62191DD89E540038ECE4 /* Icon-App-29x29@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@1x.png"; sourceTree = "<group>"; };
+		573C621A1DD89E540038ECE4 /* Icon-App-29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@2x.png"; sourceTree = "<group>"; };
+		573C621B1DD89E540038ECE4 /* Icon-App-29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@3x.png"; sourceTree = "<group>"; };
+		573C621C1DD89E540038ECE4 /* Icon-App-40x40@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@1x.png"; sourceTree = "<group>"; };
+		573C621D1DD89E540038ECE4 /* Icon-App-40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@2x.png"; sourceTree = "<group>"; };
+		573C621E1DD89E540038ECE4 /* Icon-App-40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@3x.png"; sourceTree = "<group>"; };
+		573C621F1DD89E540038ECE4 /* Icon-App-57x57@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-57x57@1x.png"; sourceTree = "<group>"; };
+		573C62201DD89E540038ECE4 /* Icon-App-60x60@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@1x.png"; sourceTree = "<group>"; };
+		573C62211DD89E540038ECE4 /* Icon-App-60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@2x.png"; sourceTree = "<group>"; };
+		573C62221DD89E540038ECE4 /* Icon-App-60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@3x.png"; sourceTree = "<group>"; };
+		573C62231DD89E540038ECE4 /* Icon-App-76x76@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@1x.png"; sourceTree = "<group>"; };
+		573C62241DD89E540038ECE4 /* Icon-App-76x76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@2x.png"; sourceTree = "<group>"; };
+		573C62251DD89E540038ECE4 /* Icon-App-76x76@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@3x.png"; sourceTree = "<group>"; };
+		573C62261DD89E540038ECE4 /* Icon-App-83.5x83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-83.5x83.5@2x.png"; sourceTree = "<group>"; };
+		573C62391DD8A0F30038ECE4 /* MainPageBackgroun_opera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainPageBackgroun_opera.png; sourceTree = "<group>"; };
+		573C623B1DD8A3620038ECE4 /* SlideTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideTableViewCell.swift; sourceTree = "<group>"; };
+		573C623D1DD8A94D0038ECE4 /* EventsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsVC.swift; sourceTree = "<group>"; };
+		573C623F1DD8A9820038ECE4 /* PopularItinerariesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularItinerariesVC.swift; sourceTree = "<group>"; };
+		573C62411DD8A9A70038ECE4 /* TaxiVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxiVC.swift; sourceTree = "<group>"; };
+		573C62431DD8A9CA0038ECE4 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		573C62471DD8AA050038ECE4 /* AboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		573C624A1DD8AD870038ECE4 /* About_100px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = About_100px.png; sourceTree = "<group>"; };
+		573C624B1DD8AD870038ECE4 /* ChristmasStar_100px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChristmasStar_100px.png; sourceTree = "<group>"; };
+		573C624C1DD8AD870038ECE4 /* DiningRoom_100px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DiningRoom_100px.png; sourceTree = "<group>"; };
+		573C624D1DD8AD870038ECE4 /* Home_100px_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home_100px_1.png; sourceTree = "<group>"; };
+		573C624F1DD8AD870038ECE4 /* Marker_100px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Marker_100px.png; sourceTree = "<group>"; };
+		573C62501DD8AD870038ECE4 /* Menu_100px_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu_100px_1.png; sourceTree = "<group>"; };
+		573C62511DD8AD870038ECE4 /* ShoppingBag_100px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShoppingBag_100px.png; sourceTree = "<group>"; };
+		573C62521DD8AD870038ECE4 /* Suitcase_100px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Suitcase_100px.png; sourceTree = "<group>"; };
+		573C62531DD8AD870038ECE4 /* Support_100px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Support_100px.png; sourceTree = "<group>"; };
+		573C62541DD8AD870038ECE4 /* Taxi_100px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Taxi_100px.png; sourceTree = "<group>"; };
+		57A85C101DDCB29400E33879 /* Idea_100px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Idea_100px.png; sourceTree = "<group>"; };
+		57E41CE61DD9F356003F6485 /* Garni.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Garni.jpg; path = AppIcon.appiconset/Garni.jpg; sourceTree = "<group>"; };
+		57E41CE71DD9F356003F6485 /* Yerevan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Yerevan.jpg; path = AppIcon.appiconset/Yerevan.jpg; sourceTree = "<group>"; };
+		57E41CE81DD9F356003F6485 /* tatev_monastery.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tatev_monastery.jpg; path = AppIcon.appiconset/tatev_monastery.jpg; sourceTree = "<group>"; };
+		57E41CED1DDB10C3003F6485 /* MyTripCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTripCollectionVC.swift; sourceTree = "<group>"; };
+		57E41CEF1DDB1220003F6485 /* MyTripCVcell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTripCVcell.swift; sourceTree = "<group>"; };
+		82B8FB5DD5BB4C774D9475CE /* Pods-Visit Armenia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Visit Armenia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Visit Armenia/Pods-Visit Armenia.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		573C61EB1DD739040038ECE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21E080683779BE5AF19C284B /* Pods_Visit_Armenia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10F05218F5E6BE63E8E6237B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34934D254B10F747611DCE69 /* Pods_Visit_Armenia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27422FD9E9AB6D189EAA2324 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2221B379B8981EBD9C79BCE9 /* Pods-Visit Armenia.debug.xcconfig */,
+				82B8FB5DD5BB4C774D9475CE /* Pods-Visit Armenia.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		573C61E51DD739040038ECE4 = {
+			isa = PBXGroup;
+			children = (
+				573C61F01DD739040038ECE4 /* Visit Armenia */,
+				573C61EF1DD739040038ECE4 /* Products */,
+				27422FD9E9AB6D189EAA2324 /* Pods */,
+				10F05218F5E6BE63E8E6237B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		573C61EF1DD739040038ECE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				573C61EE1DD739040038ECE4 /* Visit Armenia.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		573C61F01DD739040038ECE4 /* Visit Armenia */ = {
+			isa = PBXGroup;
+			children = (
+				573C62111DD89DC60038ECE4 /* DesignElements */,
+				573C62041DD7396C0038ECE4 /* SWRevealViewController.h */,
+				573C62051DD7396C0038ECE4 /* SWRevealViewController.m */,
+				573C61F51DD739050038ECE4 /* Main.storyboard */,
+				573C61F11DD739040038ECE4 /* AppDelegate.swift */,
+				573C62091DD73BF30038ECE4 /* SlideTableViewController.swift */,
+				573C61F31DD739040038ECE4 /* ViewController.swift */,
+				573C62071DD73A7C0038ECE4 /* HomeVC.swift */,
+				573C620B1DD895CA0038ECE4 /* ShoppingVC.swift */,
+				573C620D1DD895EB0038ECE4 /* NearbyPlacesVC.swift */,
+				573C620F1DD896360038ECE4 /* RestaurantsAndCafesVC.swift */,
+				573C623B1DD8A3620038ECE4 /* SlideTableViewCell.swift */,
+				573C623D1DD8A94D0038ECE4 /* EventsVC.swift */,
+				573C623F1DD8A9820038ECE4 /* PopularItinerariesVC.swift */,
+				573C62411DD8A9A70038ECE4 /* TaxiVC.swift */,
+				573C62431DD8A9CA0038ECE4 /* SettingsVC.swift */,
+				573C62471DD8AA050038ECE4 /* AboutVC.swift */,
+				573C61F81DD739050038ECE4 /* Assets.xcassets */,
+				573C61FA1DD739050038ECE4 /* LaunchScreen.storyboard */,
+				573C61FD1DD739050038ECE4 /* Info.plist */,
+				573C62031DD7396C0038ECE4 /* Visit Armenia-Bridging-Header.h */,
+				57E41CED1DDB10C3003F6485 /* MyTripCollectionVC.swift */,
+				57E41CEF1DDB1220003F6485 /* MyTripCVcell.swift */,
+			);
+			path = "Visit Armenia";
+			sourceTree = "<group>";
+		};
+		573C62111DD89DC60038ECE4 /* DesignElements */ = {
+			isa = PBXGroup;
+			children = (
+				57E41CE61DD9F356003F6485 /* Garni.jpg */,
+				57E41CE71DD9F356003F6485 /* Yerevan.jpg */,
+				57A85C101DDCB29400E33879 /* Idea_100px.png */,
+				57E41CE81DD9F356003F6485 /* tatev_monastery.jpg */,
+				573C62491DD8AD870038ECE4 /* Icons 2 */,
+				573C62141DD89E540038ECE4 /* AppIcon.appiconset */,
+				573C62121DD89DDB0038ECE4 /* First Loading Splashscreen.png */,
+				573C62391DD8A0F30038ECE4 /* MainPageBackgroun_opera.png */,
+			);
+			name = DesignElements;
+			sourceTree = "<group>";
+		};
+		573C62141DD89E540038ECE4 /* AppIcon.appiconset */ = {
+			isa = PBXGroup;
+			children = (
+				573C62151DD89E540038ECE4 /* Contents.json */,
+				573C62161DD89E540038ECE4 /* Icon-App-20x20@1x.png */,
+				573C62171DD89E540038ECE4 /* Icon-App-20x20@2x.png */,
+				573C62181DD89E540038ECE4 /* Icon-App-20x20@3x.png */,
+				573C62191DD89E540038ECE4 /* Icon-App-29x29@1x.png */,
+				573C621A1DD89E540038ECE4 /* Icon-App-29x29@2x.png */,
+				573C621B1DD89E540038ECE4 /* Icon-App-29x29@3x.png */,
+				573C621C1DD89E540038ECE4 /* Icon-App-40x40@1x.png */,
+				573C621D1DD89E540038ECE4 /* Icon-App-40x40@2x.png */,
+				573C621F1DD89E540038ECE4 /* Icon-App-57x57@1x.png */,
+				573C621E1DD89E540038ECE4 /* Icon-App-40x40@3x.png */,
+				573C62201DD89E540038ECE4 /* Icon-App-60x60@1x.png */,
+				573C62211DD89E540038ECE4 /* Icon-App-60x60@2x.png */,
+				573C62221DD89E540038ECE4 /* Icon-App-60x60@3x.png */,
+				573C62231DD89E540038ECE4 /* Icon-App-76x76@1x.png */,
+				573C62241DD89E540038ECE4 /* Icon-App-76x76@2x.png */,
+				573C62251DD89E540038ECE4 /* Icon-App-76x76@3x.png */,
+				573C62261DD89E540038ECE4 /* Icon-App-83.5x83.5@2x.png */,
+			);
+			path = AppIcon.appiconset;
+			sourceTree = "<group>";
+		};
+		573C62491DD8AD870038ECE4 /* Icons 2 */ = {
+			isa = PBXGroup;
+			children = (
+				573C624A1DD8AD870038ECE4 /* About_100px.png */,
+				573C624B1DD8AD870038ECE4 /* ChristmasStar_100px.png */,
+				573C624C1DD8AD870038ECE4 /* DiningRoom_100px.png */,
+				573C624D1DD8AD870038ECE4 /* Home_100px_1.png */,
+				573C624F1DD8AD870038ECE4 /* Marker_100px.png */,
+				573C62501DD8AD870038ECE4 /* Menu_100px_1.png */,
+				573C62511DD8AD870038ECE4 /* ShoppingBag_100px.png */,
+				573C62521DD8AD870038ECE4 /* Suitcase_100px.png */,
+				573C62531DD8AD870038ECE4 /* Support_100px.png */,
+				573C62541DD8AD870038ECE4 /* Taxi_100px.png */,
+			);
+			path = "Icons 2";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		573C61ED1DD739040038ECE4 /* Visit Armenia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 573C62001DD739050038ECE4 /* Build configuration list for PBXNativeTarget "Visit Armenia" */;
+			buildPhases = (
+				4121F747788DC630FDB656E1 /* [CP] Check Pods Manifest.lock */,
+				573C61EA1DD739040038ECE4 /* Sources */,
+				573C61EB1DD739040038ECE4 /* Frameworks */,
+				573C61EC1DD739040038ECE4 /* Resources */,
+				D1B94615B1BD755E53D73ED8 /* [CP] Embed Pods Frameworks */,
+				6A7D40CBC1C55507A42BE142 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Visit Armenia";
+			productName = "Visit Armenia";
+			productReference = 573C61EE1DD739040038ECE4 /* Visit Armenia.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		573C61E61DD739040038ECE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Gagik Papoyan";
+				TargetAttributes = {
+					573C61ED1DD739040038ECE4 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 88L62R365Q;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 573C61E91DD739040038ECE4 /* Build configuration list for PBXProject "Visit Armenia" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 573C61E51DD739040038ECE4;
+			productRefGroup = 573C61EF1DD739040038ECE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				573C61ED1DD739040038ECE4 /* Visit Armenia */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		573C61EC1DD739040038ECE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				573C622C1DD89E540038ECE4 /* Icon-App-29x29@2x.png in Resources */,
+				573C625F1DD8AD870038ECE4 /* Taxi_100px.png in Resources */,
+				573C625E1DD8AD870038ECE4 /* Support_100px.png in Resources */,
+				573C62271DD89E540038ECE4 /* Contents.json in Resources */,
+				573C62561DD8AD870038ECE4 /* ChristmasStar_100px.png in Resources */,
+				573C62311DD89E540038ECE4 /* Icon-App-57x57@1x.png in Resources */,
+				573C625A1DD8AD870038ECE4 /* Marker_100px.png in Resources */,
+				573C62291DD89E540038ECE4 /* Icon-App-20x20@2x.png in Resources */,
+				573C61FC1DD739050038ECE4 /* LaunchScreen.storyboard in Resources */,
+				573C62581DD8AD870038ECE4 /* Home_100px_1.png in Resources */,
+				573C62331DD89E540038ECE4 /* Icon-App-60x60@2x.png in Resources */,
+				573C622D1DD89E540038ECE4 /* Icon-App-29x29@3x.png in Resources */,
+				573C622A1DD89E540038ECE4 /* Icon-App-20x20@3x.png in Resources */,
+				573C625C1DD8AD870038ECE4 /* ShoppingBag_100px.png in Resources */,
+				573C61F91DD739050038ECE4 /* Assets.xcassets in Resources */,
+				57E41CE91DD9F356003F6485 /* Garni.jpg in Resources */,
+				573C62341DD89E540038ECE4 /* Icon-App-60x60@3x.png in Resources */,
+				573C623A1DD8A0F30038ECE4 /* MainPageBackgroun_opera.png in Resources */,
+				573C62571DD8AD870038ECE4 /* DiningRoom_100px.png in Resources */,
+				573C62381DD89E540038ECE4 /* Icon-App-83.5x83.5@2x.png in Resources */,
+				57A85C111DDCB29400E33879 /* Idea_100px.png in Resources */,
+				573C62131DD89DDB0038ECE4 /* First Loading Splashscreen.png in Resources */,
+				573C62371DD89E540038ECE4 /* Icon-App-76x76@3x.png in Resources */,
+				57E41CEB1DD9F356003F6485 /* tatev_monastery.jpg in Resources */,
+				573C62321DD89E540038ECE4 /* Icon-App-60x60@1x.png in Resources */,
+				573C62361DD89E540038ECE4 /* Icon-App-76x76@2x.png in Resources */,
+				573C62351DD89E540038ECE4 /* Icon-App-76x76@1x.png in Resources */,
+				573C61F71DD739050038ECE4 /* Main.storyboard in Resources */,
+				573C622E1DD89E540038ECE4 /* Icon-App-40x40@1x.png in Resources */,
+				573C62281DD89E540038ECE4 /* Icon-App-20x20@1x.png in Resources */,
+				573C62301DD89E540038ECE4 /* Icon-App-40x40@3x.png in Resources */,
+				573C62551DD8AD870038ECE4 /* About_100px.png in Resources */,
+				573C622F1DD89E540038ECE4 /* Icon-App-40x40@2x.png in Resources */,
+				573C625B1DD8AD870038ECE4 /* Menu_100px_1.png in Resources */,
+				57E41CEA1DD9F356003F6485 /* Yerevan.jpg in Resources */,
+				573C625D1DD8AD870038ECE4 /* Suitcase_100px.png in Resources */,
+				573C622B1DD89E540038ECE4 /* Icon-App-29x29@1x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4121F747788DC630FDB656E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6A7D40CBC1C55507A42BE142 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Visit Armenia/Pods-Visit Armenia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1B94615B1BD755E53D73ED8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Visit Armenia/Pods-Visit Armenia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		573C61EA1DD739040038ECE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				573C62441DD8A9CA0038ECE4 /* SettingsVC.swift in Sources */,
+				573C620C1DD895CA0038ECE4 /* ShoppingVC.swift in Sources */,
+				573C623E1DD8A94D0038ECE4 /* EventsVC.swift in Sources */,
+				57E41CEE1DDB10C3003F6485 /* MyTripCollectionVC.swift in Sources */,
+				573C61F41DD739040038ECE4 /* ViewController.swift in Sources */,
+				573C62081DD73A7C0038ECE4 /* HomeVC.swift in Sources */,
+				573C620E1DD895EB0038ECE4 /* NearbyPlacesVC.swift in Sources */,
+				573C623C1DD8A3620038ECE4 /* SlideTableViewCell.swift in Sources */,
+				573C620A1DD73BF30038ECE4 /* SlideTableViewController.swift in Sources */,
+				573C62101DD896360038ECE4 /* RestaurantsAndCafesVC.swift in Sources */,
+				573C61F21DD739040038ECE4 /* AppDelegate.swift in Sources */,
+				573C62061DD7396C0038ECE4 /* SWRevealViewController.m in Sources */,
+				57E41CF01DDB1220003F6485 /* MyTripCVcell.swift in Sources */,
+				573C62481DD8AA050038ECE4 /* AboutVC.swift in Sources */,
+				573C62421DD8A9A70038ECE4 /* TaxiVC.swift in Sources */,
+				573C62401DD8A9820038ECE4 /* PopularItinerariesVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		573C61F51DD739050038ECE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				573C61F61DD739050038ECE4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		573C61FA1DD739050038ECE4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				573C61FB1DD739050038ECE4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		573C61FE1DD739050038ECE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		573C61FF1DD739050038ECE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		573C62011DD739050038ECE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2221B379B8981EBD9C79BCE9 /* Pods-Visit Armenia.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 88L62R365Q;
+				INFOPLIST_FILE = "Visit Armenia/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.atom.Visit-Armenia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Visit Armenia/Visit Armenia-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		573C62021DD739050038ECE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82B8FB5DD5BB4C774D9475CE /* Pods-Visit Armenia.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 88L62R365Q;
+				INFOPLIST_FILE = "Visit Armenia/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.atom.Visit-Armenia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Visit Armenia/Visit Armenia-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		573C61E91DD739040038ECE4 /* Build configuration list for PBXProject "Visit Armenia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				573C61FE1DD739050038ECE4 /* Debug */,
+				573C61FF1DD739050038ECE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		573C62001DD739050038ECE4 /* Build configuration list for PBXNativeTarget "Visit Armenia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				573C62011DD739050038ECE4 /* Debug */,
+				573C62021DD739050038ECE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 573C61E61DD739040038ECE4 /* Project object */;
+}
