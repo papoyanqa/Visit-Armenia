@@ -68,7 +68,7 @@ class MyTripCollectionVC: UICollectionViewController {
             cell.imageViewText.text = collectionArrayImageView[indexPath.section]
             cell.taxtLabelInfo.text = collectionArrayLabelString[indexPath.section]
             cell.viewDetailsBtn.removeTarget(self, action: nil, for: .touchUpInside)
-            cell.viewDetailsBtn.addTarget(self, action: Selector(("buttonTapped")), for: .touchUpInside)
+            cell.viewDetailsBtn.addTarget(self, action: #selector(MyTripCollectionVC.buttonTapped), for: .touchUpInside)
         }
         
         if ((indexPath as NSIndexPath).section == 1) {
