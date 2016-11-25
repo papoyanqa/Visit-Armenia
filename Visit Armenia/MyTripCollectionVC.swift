@@ -35,7 +35,7 @@ class MyTripCollectionVC: UICollectionViewController {
     /*
      // MARK: - Navigation
      
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     // In a storyboard-based , you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
      // Get the new view controller using [segue destinationViewController].
      // Pass the selected object to the new view controller.
@@ -55,9 +55,22 @@ class MyTripCollectionVC: UICollectionViewController {
         return 1
     }
     
-    func buttonTapped() {
-         self.navigationController?.pushViewController(HomeVC(), animated: true)
-
+    func buttonTappedFirst() {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "detailVC") as! ViewDetailVC
+        vc.index = 1
+         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func buttonTappedSecond() {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "detailVC") as! ViewDetailVC
+        vc.index = 2
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func buttonTappedThird() {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "detailVC") as! ViewDetailVC
+        vc.index = 3
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -68,20 +81,21 @@ class MyTripCollectionVC: UICollectionViewController {
             cell.imageViewText.text = collectionArrayImageView[indexPath.section]
             cell.taxtLabelInfo.text = collectionArrayLabelString[indexPath.section]
             cell.viewDetailsBtn.removeTarget(self, action: nil, for: .touchUpInside)
-            cell.viewDetailsBtn.addTarget(self, action: #selector(MyTripCollectionVC.buttonTapped), for: .touchUpInside)
+            cell.viewDetailsBtn.addTarget(self, action: #selector(MyTripCollectionVC.buttonTappedFirst), for: .touchUpInside)
         }
         
         if ((indexPath as NSIndexPath).section == 1) {
             cell.imageViewTour.image = UIImage(named: "tatev_monastery.jpg")
             cell.imageViewText.text = collectionArrayImageView[indexPath.section]
             cell.taxtLabelInfo.text = collectionArrayLabelString[indexPath.section]
-            
+            cell.viewDetailsBtn.addTarget(self, action: #selector(MyTripCollectionVC.buttonTappedSecond), for: .touchUpInside)
         }
         
         if ((indexPath as NSIndexPath).section == 2) {
             cell.imageViewTour.image = UIImage(named: "Garni.jpg")
             cell.imageViewText.text = collectionArrayImageView[indexPath.section]
             cell.taxtLabelInfo.text = collectionArrayLabelString[indexPath.section]
+            cell.viewDetailsBtn.addTarget(self, action: #selector(MyTripCollectionVC.buttonTappedThird), for: .touchUpInside)
         }
 
         

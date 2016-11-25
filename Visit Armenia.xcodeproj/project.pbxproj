@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		21E080683779BE5AF19C284B /* Pods_Visit_Armenia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34934D254B10F747611DCE69 /* Pods_Visit_Armenia.framework */; };
+		49A9C7EB1DE88DC20066CBBE /* ViewDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9C7EA1DE88DC20066CBBE /* ViewDetailVC.swift */; };
+		49A9C7ED1DE8D0040066CBBE /* ViewDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9C7EC1DE8D0040066CBBE /* ViewDetailsCell.swift */; };
 		573C61F21DD739040038ECE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573C61F11DD739040038ECE4 /* AppDelegate.swift */; };
 		573C61F41DD739040038ECE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573C61F31DD739040038ECE4 /* ViewController.swift */; };
 		573C61F71DD739050038ECE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 573C61F51DD739050038ECE4 /* Main.storyboard */; };
@@ -66,6 +68,8 @@
 /* Begin PBXFileReference section */
 		2221B379B8981EBD9C79BCE9 /* Pods-Visit Armenia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Visit Armenia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Visit Armenia/Pods-Visit Armenia.debug.xcconfig"; sourceTree = "<group>"; };
 		34934D254B10F747611DCE69 /* Pods_Visit_Armenia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Visit_Armenia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49A9C7EA1DE88DC20066CBBE /* ViewDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDetailVC.swift; sourceTree = "<group>"; };
+		49A9C7EC1DE8D0040066CBBE /* ViewDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDetailsCell.swift; sourceTree = "<group>"; };
 		573C61EE1DD739040038ECE4 /* Visit Armenia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Visit Armenia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		573C61F11DD739040038ECE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		573C61F31DD739040038ECE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -199,6 +203,8 @@
 				573C62031DD7396C0038ECE4 /* Visit Armenia-Bridging-Header.h */,
 				57E41CED1DDB10C3003F6485 /* MyTripCollectionVC.swift */,
 				57E41CEF1DDB1220003F6485 /* MyTripCVcell.swift */,
+				49A9C7EA1DE88DC20066CBBE /* ViewDetailVC.swift */,
+				49A9C7EC1DE8D0040066CBBE /* ViewDetailsCell.swift */,
 			);
 			path = "Visit Armenia";
 			sourceTree = "<group>";
@@ -423,6 +429,7 @@
 				573C620C1DD895CA0038ECE4 /* ShoppingVC.swift in Sources */,
 				573C623E1DD8A94D0038ECE4 /* EventsVC.swift in Sources */,
 				57E41CEE1DDB10C3003F6485 /* MyTripCollectionVC.swift in Sources */,
+				49A9C7EB1DE88DC20066CBBE /* ViewDetailVC.swift in Sources */,
 				573C61F41DD739040038ECE4 /* ViewController.swift in Sources */,
 				573C62081DD73A7C0038ECE4 /* HomeVC.swift in Sources */,
 				573C620E1DD895EB0038ECE4 /* NearbyPlacesVC.swift in Sources */,
@@ -431,6 +438,7 @@
 				573C62101DD896360038ECE4 /* RestaurantsAndCafesVC.swift in Sources */,
 				573C61F21DD739040038ECE4 /* AppDelegate.swift in Sources */,
 				573C62061DD7396C0038ECE4 /* SWRevealViewController.m in Sources */,
+				49A9C7ED1DE8D0040066CBBE /* ViewDetailsCell.swift in Sources */,
 				57E41CF01DDB1220003F6485 /* MyTripCVcell.swift in Sources */,
 				573C62481DD8AA050038ECE4 /* AboutVC.swift in Sources */,
 				573C62421DD8A9A70038ECE4 /* TaxiVC.swift in Sources */,

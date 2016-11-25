@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -689,6 +689,89 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0xC-hJ-xpl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3092" y="4458"/>
+        </scene>
+        <!--View DetailVC-->
+        <scene sceneID="ar6-L3-4a8">
+            <objects>
+                <collectionViewController storyboardIdentifier="detailVC" id="NpZ-0o-AQw" customClass="ViewDetailVC" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="fCk-vY-paF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="baj-8u-KvD">
+                            <size key="itemSize" width="354" height="433"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="w5e-9w-n42" customClass="ViewDetailsCell" customModule="Visit_Armenia" customModuleProvider="target">
+                                <rect key="frame" x="11" y="10" width="354" height="433"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="354" height="433"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o5O-Oc-grO">
+                                            <rect key="frame" x="10" y="8" width="335" height="189"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="189" id="DzP-eb-72I"/>
+                                            </constraints>
+                                        </imageView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JLO-AA-eQY">
+                                            <rect key="frame" x="10" y="207" width="335" height="218"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="o5O-Oc-grO" firstAttribute="leading" secondItem="w5e-9w-n42" secondAttribute="leading" constant="10" id="38Y-VI-bkr"/>
+                                    <constraint firstItem="JLO-AA-eQY" firstAttribute="leading" secondItem="w5e-9w-n42" secondAttribute="leading" constant="10" id="8qW-3d-8ue"/>
+                                    <constraint firstItem="JLO-AA-eQY" firstAttribute="centerX" secondItem="w5e-9w-n42" secondAttribute="centerX" id="9g5-jK-s3Q"/>
+                                    <constraint firstItem="o5O-Oc-grO" firstAttribute="top" secondItem="w5e-9w-n42" secondAttribute="top" constant="8" id="Pjm-bU-fHs"/>
+                                    <constraint firstAttribute="trailing" secondItem="JLO-AA-eQY" secondAttribute="trailing" constant="9" id="jJu-aR-Xlt"/>
+                                    <constraint firstAttribute="trailing" secondItem="o5O-Oc-grO" secondAttribute="trailing" constant="9" id="kjk-VN-aiQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="JLO-AA-eQY" secondAttribute="bottom" constant="8" id="xbn-Hl-EN5"/>
+                                    <constraint firstItem="JLO-AA-eQY" firstAttribute="top" secondItem="o5O-Oc-grO" secondAttribute="bottom" constant="10" id="y8Z-YZ-vl9"/>
+                                </constraints>
+                                <size key="customSize" width="354" height="433"/>
+                                <connections>
+                                    <outlet property="imageView" destination="o5O-Oc-grO" id="RCU-T1-46y"/>
+                                    <outlet property="textView" destination="JLO-AA-eQY" id="1mr-Az-HgW"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="NpZ-0o-AQw" id="FZv-Pj-tAO"/>
+                            <outlet property="delegate" destination="NpZ-0o-AQw" id="87g-1W-T2n"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vxy-cP-I9o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3972" y="4457.7211394302849"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5Xm-lC-ZYE">
+            <objects>
+                <viewController id="9kp-pG-Ing" customClass="ViewController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UF0-dJ-Wzc"/>
+                        <viewControllerLayoutGuide type="bottom" id="oUa-Pe-KLE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CTg-hF-oeD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JB1-7D-Xjm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4041" y="5236"/>
         </scene>
         <!--AboutVC-->
         <scene sceneID="tmZ-am-kG6">
