@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12DA1B011DEA23CF007DB683 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DA1B001DEA23CF007DB683 /* BaseNavigationController.swift */; };
 		21E080683779BE5AF19C284B /* Pods_Visit_Armenia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34934D254B10F747611DCE69 /* Pods_Visit_Armenia.framework */; };
 		49A9C7EB1DE88DC20066CBBE /* ViewDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9C7EA1DE88DC20066CBBE /* ViewDetailVC.swift */; };
 		49A9C7ED1DE8D0040066CBBE /* ViewDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9C7EC1DE8D0040066CBBE /* ViewDetailsCell.swift */; };
@@ -67,6 +68,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12DA1B001DEA23CF007DB683 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		2221B379B8981EBD9C79BCE9 /* Pods-Visit Armenia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Visit Armenia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Visit Armenia/Pods-Visit Armenia.debug.xcconfig"; sourceTree = "<group>"; };
 		34934D254B10F747611DCE69 /* Pods_Visit_Armenia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Visit_Armenia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A9C7EA1DE88DC20066CBBE /* ViewDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDetailVC.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				57E41CEF1DDB1220003F6485 /* MyTripCVcell.swift */,
 				49A9C7EA1DE88DC20066CBBE /* ViewDetailVC.swift */,
 				49A9C7EC1DE8D0040066CBBE /* ViewDetailsCell.swift */,
+				12DA1B001DEA23CF007DB683 /* BaseNavigationController.swift */,
 			);
 			path = "Visit Armenia";
 			sourceTree = "<group>";
@@ -276,12 +279,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 573C62001DD739050038ECE4 /* Build configuration list for PBXNativeTarget "Visit Armenia" */;
 			buildPhases = (
+				9E629C0A053616B20090EF8D /* 📦 Check Pods Manifest.lock */,
 				4121F747788DC630FDB656E1 /* [CP] Check Pods Manifest.lock */,
 				573C61EA1DD739040038ECE4 /* Sources */,
 				573C61EB1DD739040038ECE4 /* Frameworks */,
 				573C61EC1DD739040038ECE4 /* Resources */,
 				D1B94615B1BD755E53D73ED8 /* [CP] Embed Pods Frameworks */,
 				6A7D40CBC1C55507A42BE142 /* [CP] Copy Pods Resources */,
+				13A9C92A15A0BDC2FED8D558 /* 📦 Embed Pods Frameworks */,
+				5D8E82BEB3EF89D6DA753A7D /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -377,6 +383,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		13A9C92A15A0BDC2FED8D558 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Visit Armenia/Pods-Visit Armenia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4121F747788DC630FDB656E1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -392,6 +413,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		5D8E82BEB3EF89D6DA753A7D /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Visit Armenia/Pods-Visit Armenia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6A7D40CBC1C55507A42BE142 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -405,6 +441,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Visit Armenia/Pods-Visit Armenia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E629C0A053616B20090EF8D /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D1B94615B1BD755E53D73ED8 /* [CP] Embed Pods Frameworks */ = {
@@ -435,6 +486,7 @@
 				57E41CEE1DDB10C3003F6485 /* MyTripCollectionVC.swift in Sources */,
 				49A9C7EB1DE88DC20066CBBE /* ViewDetailVC.swift in Sources */,
 				573C61F41DD739040038ECE4 /* ViewController.swift in Sources */,
+				12DA1B011DEA23CF007DB683 /* BaseNavigationController.swift in Sources */,
 				573C62081DD73A7C0038ECE4 /* HomeVC.swift in Sources */,
 				573C620E1DD895EB0038ECE4 /* NearbyPlacesVC.swift in Sources */,
 				573C623C1DD8A3620038ECE4 /* SlideTableViewCell.swift in Sources */,

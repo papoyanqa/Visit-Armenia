@@ -19,14 +19,21 @@ class HomeVC: UIViewController {
         newImage = resizeImage(image: image, newWidth: 25)
         slideMenu.image = newImage
         slideMenu.accessibilityFrame = CGRect(x: 0, y: 0, width: 50, height: 50)
-        navigationController?.navigationBar.backgroundColor = UIColor.clear
-        navigationController?.navigationBar.barStyle = UIBarStyle.black
+//        navigationController?.navigationBar.backgroundColor = UIColor.clear
+//        navigationController?.navigationBar.barStyle = UIBarStyle.black
+        navigationController?.navigationBar.barTintColor = UIColor.clear
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
         slideMenu.imageInsets = UIEdgeInsetsMake(0, 0, 0, 0)
             if revealViewController() != nil {
                 slideMenu.target = self.revealViewController()
                 slideMenu.action = #selector(SWRevealViewController.revealToggle(_:))
                 self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
         }
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
     func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage? {
