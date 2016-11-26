@@ -92,7 +92,7 @@ class MyTripCollectionVC: UICollectionViewController {
         }
         
         if ((indexPath as NSIndexPath).section == 2) {
-            cell.imageViewTour.image = UIImage(named: "Garni.jpg")
+            cell.imageViewTour.image = UIImage(named: "Garni_Temple.jpg")
             cell.imageViewText.text = collectionArrayImageView[indexPath.section]
             cell.taxtLabelInfo.text = collectionArrayLabelString[indexPath.section]
             cell.viewDetailsBtn.addTarget(self, action: #selector(MyTripCollectionVC.buttonTappedThird), for: .touchUpInside)

@@ -64,7 +64,6 @@ class ViewDetailVC: UICollectionViewController {
             if ((indexPath as NSIndexPath).section == 0){
                 cell.imageView.image = UIImage(named: "tatev_monastery.jpg")
                 cell.textView.text = "asdasdasdasdasdasdasd"
-                
             }
         }
         

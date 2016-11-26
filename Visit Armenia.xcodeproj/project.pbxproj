@@ -10,6 +10,7 @@
 		21E080683779BE5AF19C284B /* Pods_Visit_Armenia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34934D254B10F747611DCE69 /* Pods_Visit_Armenia.framework */; };
 		49A9C7EB1DE88DC20066CBBE /* ViewDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9C7EA1DE88DC20066CBBE /* ViewDetailVC.swift */; };
 		49A9C7ED1DE8D0040066CBBE /* ViewDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9C7EC1DE8D0040066CBBE /* ViewDetailsCell.swift */; };
+		49A9C7EF1DE983D00066CBBE /* Garni_Temple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49A9C7EE1DE983D00066CBBE /* Garni_Temple.jpg */; };
 		573C61F21DD739040038ECE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573C61F11DD739040038ECE4 /* AppDelegate.swift */; };
 		573C61F41DD739040038ECE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573C61F31DD739040038ECE4 /* ViewController.swift */; };
 		573C61F71DD739050038ECE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 573C61F51DD739050038ECE4 /* Main.storyboard */; };
@@ -70,6 +71,7 @@
 		34934D254B10F747611DCE69 /* Pods_Visit_Armenia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Visit_Armenia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A9C7EA1DE88DC20066CBBE /* ViewDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDetailVC.swift; sourceTree = "<group>"; };
 		49A9C7EC1DE8D0040066CBBE /* ViewDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDetailsCell.swift; sourceTree = "<group>"; };
+		49A9C7EE1DE983D00066CBBE /* Garni_Temple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Garni_Temple.jpg; path = "Design elements/TimeLine non active/Source/Garni_Temple.jpg"; sourceTree = SOURCE_ROOT; };
 		573C61EE1DD739040038ECE4 /* Visit Armenia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Visit Armenia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		573C61F11DD739040038ECE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		573C61F31DD739040038ECE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				57E41CE61DD9F356003F6485 /* Garni.jpg */,
+				49A9C7EE1DE983D00066CBBE /* Garni_Temple.jpg */,
 				57E41CE71DD9F356003F6485 /* Yerevan.jpg */,
 				57A85C101DDCB29400E33879 /* Idea_100px.png */,
 				57E41CE81DD9F356003F6485 /* tatev_monastery.jpg */,
@@ -336,6 +339,7 @@
 				573C62271DD89E540038ECE4 /* Contents.json in Resources */,
 				573C62561DD8AD870038ECE4 /* ChristmasStar_100px.png in Resources */,
 				573C62311DD89E540038ECE4 /* Icon-App-57x57@1x.png in Resources */,
+				49A9C7EF1DE983D00066CBBE /* Garni_Temple.jpg in Resources */,
 				573C625A1DD8AD870038ECE4 /* Marker_100px.png in Resources */,
 				573C62291DD89E540038ECE4 /* Icon-App-20x20@2x.png in Resources */,
 				573C61FC1DD739050038ECE4 /* LaunchScreen.storyboard in Resources */,

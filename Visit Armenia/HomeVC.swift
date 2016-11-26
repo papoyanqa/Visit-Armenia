@@ -13,17 +13,31 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if revealViewController() != nil {
-            slideMenu.target = self.revealViewController()
-            slideMenu.action = #selector(SWRevealViewController.revealToggle(_:))
-            self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
+        var image: UIImage!
+        var newImage: UIImage!
+        image = UIImage(named: "Menu_100px_1.png")
+        newImage = resizeImage(image: image, newWidth: 25)
+        slideMenu.image = newImage
+        slideMenu.accessibilityFrame = CGRect(x: 0, y: 0, width: 50, height: 50)
+        navigationController?.navigationBar.backgroundColor = UIColor.clear
+        navigationController?.navigationBar.barStyle = UIBarStyle.black
+        slideMenu.imageInsets = UIEdgeInsetsMake(0, 0, 0, 0)
+            if revealViewController() != nil {
+                slideMenu.target = self.revealViewController()
+                slideMenu.action = #selector(SWRevealViewController.revealToggle(_:))
+                self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
         }
-        // Do any additional setup after loading the view.
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage? {
+        let scale = newWidth / image.size.width
+        let newHeight = image.size.height * scale
+        UIGraphicsBeginImageContext(CGSize(width: newWidth, height: newHeight))
+        image.draw(in: CGRect(x: 0, y: 0, width: newWidth, height: newHeight))
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage
     }
+    
     
 }
