@@ -463,7 +463,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="3JE-yW-LAn">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="Oyw-4I-vmL"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="Oyw-4I-vmL">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" id="chu-gi-IOk">
                             <connections>
                                 <action selector="location:" destination="8Re-YL-LIz" id="rug-JK-lLv"/>
@@ -499,7 +501,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Oeb-V0-fua"/>
+                    <navigationItem key="navigationItem" id="Oeb-V0-fua">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="uPJ-7c-D8R"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9J7-QE-Qva" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -524,7 +528,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="mzv-15-lJj"/>
+                    <navigationItem key="navigationItem" id="mzv-15-lJj">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="uuF-QU-EDz"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tzv-Ex-4B3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -543,7 +549,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="k2B-kH-4yr"/>
+                    <navigationItem key="navigationItem" id="k2B-kH-4yr">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="wYJ-GE-Wpm"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BMQ-Pa-cqS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -562,7 +570,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="cNb-rA-gqs"/>
+                    <navigationItem key="navigationItem" id="cNb-rA-gqs">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="NEe-9h-E8n"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P6T-7z-cn3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -581,7 +591,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="IDp-p0-olc"/>
+                    <navigationItem key="navigationItem" id="IDp-p0-olc">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="2Yy-w1-lBR"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kin-dk-Yfb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -600,7 +612,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="wmU-cN-KtT"/>
+                    <navigationItem key="navigationItem" id="wmU-cN-KtT">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="fQ7-fg-ieV"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qhY-nH-VbI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -641,7 +655,7 @@
                                                 <action selector="action:" destination="r4U-YT-9wc" eventType="touchUpInside" id="g2g-Tq-tfz"/>
                                             </connections>
                                         </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{some text}" lineBreakMode="headTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="arN-8R-G1i">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{some text}" lineBreakMode="wordWrap" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arN-8R-G1i">
                                             <rect key="frame" x="8" y="205" width="216" height="39"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="39" id="4Gk-dr-Bel"/>
@@ -689,7 +703,12 @@
                             <outlet property="delegate" destination="K2s-qJ-p31" id="DLH-PU-tZW"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="Xdu-Od-BFf"/>
+                    <navigationItem key="navigationItem" id="Xdu-Od-BFf">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="Hgg-03-udX"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="slideMenu" destination="Hgg-03-udX" id="zOa-GV-tma"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0xC-hJ-xpl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -791,7 +810,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Ghi-Dj-IJc"/>
+                    <navigationItem key="navigationItem" id="Ghi-Dj-IJc">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="B0p-78-Keb"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X5U-YS-qUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -815,10 +836,10 @@
             </objects>
             <point key="canvasLocation" x="2158" y="-970"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Base Navigation Controller-->
         <scene sceneID="ubq-Kt-FzK">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="02u-bh-Iax" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="02u-bh-Iax" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="cft-Nc-CNz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -833,10 +854,10 @@
             </objects>
             <point key="canvasLocation" x="2152.8000000000002" y="-260.41979010494754"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Base Navigation Controller-->
         <scene sceneID="8At-ea-NFu">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DPU-cm-Vp7" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DPU-cm-Vp7" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6kT-Ma-q43">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -851,10 +872,10 @@
             </objects>
             <point key="canvasLocation" x="2152.8000000000002" y="427.73613193403304"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Base Navigation Controller-->
         <scene sceneID="9QQ-ob-nGN">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ewi-qv-o8r" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ewi-qv-o8r" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="pz0-Cv-hLS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -869,10 +890,10 @@
             </objects>
             <point key="canvasLocation" x="2110" y="4709"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Base Navigation Controller-->
         <scene sceneID="D0o-jr-ztJ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BL3-Gv-eoR" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BL3-Gv-eoR" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="fe9-Fb-vIi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -887,10 +908,10 @@
             </objects>
             <point key="canvasLocation" x="2152.8000000000002" y="1169.865067466267"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Base Navigation Controller-->
         <scene sceneID="ZiY-ux-ZXN">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AQt-Ke-kVT" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AQt-Ke-kVT" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="bdp-4z-6dP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -905,10 +926,10 @@
             </objects>
             <point key="canvasLocation" x="2157.5999999999999" y="1856.2218890554725"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Base Navigation Controller-->
         <scene sceneID="hxy-jX-qUI">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NNp-cl-v6r" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NNp-cl-v6r" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="dcx-pD-PtV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -923,10 +944,10 @@
             </objects>
             <point key="canvasLocation" x="2133.5999999999999" y="2561.4692653673164"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Base Navigation Controller-->
         <scene sceneID="RC2-CQ-gQt">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b0y-wX-TdD" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b0y-wX-TdD" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="rxn-9E-thF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -941,10 +962,10 @@
             </objects>
             <point key="canvasLocation" x="2111.1999999999998" y="3288.3058470764622"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Base Navigation Controller-->
         <scene sceneID="r2n-2E-Bfi">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wIk-pk-QFZ" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wIk-pk-QFZ" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="qbr-cv-tnh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -959,10 +980,10 @@
             </objects>
             <point key="canvasLocation" x="2109.5999999999999" y="3981.8590704647681"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Base Navigation Controller-->
         <scene sceneID="5nb-ai-8pd">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e9o-xy-Qyd" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e9o-xy-Qyd" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NKH-5J-Zrp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

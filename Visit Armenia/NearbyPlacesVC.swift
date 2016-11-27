@@ -19,13 +19,22 @@ class NearbyPlacesVC: UIViewController {
     let locationManager = CLLocationManager()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+   
         locationManager.requestWhenInUseAuthorization()
         
+        var image: UIImage!
+        var newImage: UIImage!
+        image = UIImage(named: "Menu_100px_1.png")
+        newImage = resizeImage(image: image, newWidth: 25)
+        slideMenu.image = newImage
+        slideMenu.accessibilityFrame = CGRect(x: 0, y: 0, width: 50, height: 50)
+        slideMenu.imageInsets = UIEdgeInsetsMake(0, 0, 0, 0)
+        slideMenu.title = nil
+        slideMenu.tintColor = UIColor.black
         if revealViewController() != nil {
             slideMenu.target = self.revealViewController()
             slideMenu.action = #selector(SWRevealViewController.revealToggle(_:))
+            self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
         }
         
         self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
@@ -45,6 +54,15 @@ class NearbyPlacesVC: UIViewController {
         print(locationManager.location?.coordinate.longitude)
     }
     
+    func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage? {
+        let scale = newWidth / image.size.width
+        let newHeight = image.size.height * scale
+        UIGraphicsBeginImageContext(CGSize(width: newWidth, height: newHeight))
+        image.draw(in: CGRect(x: 0, y: 0, width: newWidth, height: newHeight))
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage
+    }
     
 }
 	 
