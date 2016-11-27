@@ -10,7 +10,7 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-class MyTripCollectionVC: UICollectionViewController {
+class MyTripCollectionVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     var collectionArrayLabelString = [String]()
     var collectionArrayImageView = [String]()
     var collectionIndex = [String]()
@@ -38,8 +38,8 @@ class MyTripCollectionVC: UICollectionViewController {
         collectionArrayImageView = ["3 Days in Yerevan", "7 Days Tour to The Culture of Armenia", "10 Days Tour to The Culture of Armenia"]
         collectionIndex = ["1", "2", "3"]
         // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-        self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
+//        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        view.addGestureRecognizer(revealViewController().panGestureRecognizer())
         view.backgroundColor = UIColor.red
         // Do any additional setup after loading the view.
     }
@@ -63,13 +63,13 @@ class MyTripCollectionVC: UICollectionViewController {
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return collectionIndex.count
+        return 1
     }
     
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 1
+        return collectionIndex.count
     }
     
     func buttonTappedFirst() {
@@ -117,5 +117,43 @@ class MyTripCollectionVC: UICollectionViewController {
 
         return cell
     }
+    
+
+    
+
+    // MARK: UICollectionViewDelegate
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.size.width - 24, height: 252)
+    }
+    
+    /*
+     // Uncomment this method to specify if the specified item should be highlighted during tracking
+     override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
+     return true
+     }
+     */
+    
+    /*
+     // Uncomment this method to specify if the specified item should be selected
+     override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
+     return true
+     }
+     */
+    
+    /*
+     // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
+     override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
+     return false
+     }
+     
+     override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
+     return false
+     }
+     
+     override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
+     
+     }
+     */
     
 }
