@@ -21,7 +21,7 @@ class MyTripCollectionVC: UICollectionViewController, UICollectionViewDelegateFl
         collectionArrayImageView = ["3 Days in Yerevan", "7 Days Tour to The Culture of Armenia", "10 Days Tour to The Culture of Armenia"]
         collectionIndex = ["1", "2", "3"]
         // Register cell classes
-//        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+//        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         view.addGestureRecognizer(revealViewController().panGestureRecognizer())
         view.backgroundColor = UIColor.red
         // Do any additional setup after loading the view.
@@ -82,14 +82,14 @@ class MyTripCollectionVC: UICollectionViewController, UICollectionViewDelegateFl
             cell.taxtLabelInfo.text = collectionArrayLabelString[indexPath.section]
             cell.viewDetailsBtn.removeTarget(self, action: nil, for: .touchUpInside)
             cell.viewDetailsBtn.addTarget(self, action: #selector(MyTripCollectionVC.buttonTappedFirst), for: .touchUpInside)
-        }
+        } else
         
         if ((indexPath as NSIndexPath).section == 1) {
             cell.imageViewTour.image = UIImage(named: "tatev_monastery.jpg")
             cell.imageViewText.text = collectionArrayImageView[indexPath.section]
             cell.taxtLabelInfo.text = collectionArrayLabelString[indexPath.section]
             cell.viewDetailsBtn.addTarget(self, action: #selector(MyTripCollectionVC.buttonTappedSecond), for: .touchUpInside)
-        }
+        } else
         
         if ((indexPath as NSIndexPath).section == 2) {
             cell.imageViewTour.image = UIImage(named: "Garni_Temple.jpg")
