@@ -446,7 +446,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LPU-c9-rom" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-954.39999999999998" y="1593.5532233883059"/>
+            <point key="canvasLocation" x="-954" y="1856"/>
         </scene>
         <!--NearbyPlacesVC-->
         <scene sceneID="CG4-Qz-iO9">
@@ -609,7 +609,7 @@
         <scene sceneID="OBX-dI-Iel">
             <objects>
                 <collectionViewController id="K2s-qJ-p31" customClass="MyTripCollectionVC" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ZfN-LE-QX5">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="ZfN-LE-QX5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -856,7 +856,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ewi-qv-o8r" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="pz0-Cv-hLS">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pz0-Cv-hLS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -874,7 +874,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BL3-Gv-eoR" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fe9-Fb-vIi">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="fe9-Fb-vIi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -892,7 +892,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AQt-Ke-kVT" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bdp-4z-6dP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="bdp-4z-6dP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -928,7 +928,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b0y-wX-TdD" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rxn-9E-thF">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="rxn-9E-thF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -946,7 +946,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wIk-pk-QFZ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qbr-cv-tnh">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="qbr-cv-tnh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -982,6 +982,6 @@
         <image name="MainPageBackgroun_opera.png" width="750" height="1334"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="aIh-3x-k1m"/>
+        <segue reference="eAk-hb-4Rs"/>
     </inferredMetricsTieBreakers>
 </document>
