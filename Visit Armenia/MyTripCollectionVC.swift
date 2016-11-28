@@ -14,9 +14,26 @@ class MyTripCollectionVC: UICollectionViewController, UICollectionViewDelegateFl
     var collectionArrayLabelString = [String]()
     var collectionArrayImageView = [String]()
     var collectionIndex = [String]()
-    
+    @IBOutlet weak var slideMenu: UIBarButtonItem!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var image: UIImage!
+        var newImage: UIImage!
+        image = UIImage(named: "Menu_100px_1.png")
+        newImage = resizeImage(image: image, newWidth: 25)
+        slideMenu.image = newImage
+        slideMenu.accessibilityFrame = CGRect(x: 0, y: 0, width: 50, height: 50)
+        slideMenu.imageInsets = UIEdgeInsetsMake(0, 0, 0, 0)
+        slideMenu.title = nil
+        slideMenu.tintColor = UIColor.black
+        if revealViewController() != nil {
+            slideMenu.target = self.revealViewController()
+            slideMenu.action = #selector(SWRevealViewController.revealToggle(_:))
+            self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
+        }
+
         collectionArrayLabelString = ["Choose this trip and explore the beautys of Yerevan in 3 days.", "Enjoy a 7 day tour around Armenia to discover the ancient culture.", "Enjoy a 10 day tour around Armenia to discover the ancient culture."]
         collectionArrayImageView = ["3 Days in Yerevan", "7 Days Tour to The Culture of Armenia", "10 Days Tour to The Culture of Armenia"]
         collectionIndex = ["1", "2", "3"]
@@ -32,15 +49,15 @@ class MyTripCollectionVC: UICollectionViewController, UICollectionViewDelegateFl
         // Dispose of any resources that can be recreated.
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based , you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using [segue destinationViewController].
-     // Pass the selected object to the new view controller.
-     }
-     */
+    func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage? {
+        let scale = newWidth / image.size.width
+        let newHeight = image.size.height * scale
+        UIGraphicsBeginImageContext(CGSize(width: newWidth, height: newHeight))
+        image.draw(in: CGRect(x: 0, y: 0, width: newWidth, height: newHeight))
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage
+    }
     
     // MARK: UICollectionViewDataSource
     
@@ -74,9 +91,9 @@ class MyTripCollectionVC: UICollectionViewController, UICollectionViewDelegateFl
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MyTripCVcell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! MyTripCVcell
         
-        if ((indexPath as NSIndexPath).section == 0) {
+        if ((indexPath as NSIndexPath).row == 0) {
             cell.imageViewTour.image = UIImage(named: "Yerevan.jpg")
             cell.imageViewText.text = collectionArrayImageView[indexPath.section]
             cell.taxtLabelInfo.text = collectionArrayLabelString[indexPath.section]
@@ -84,26 +101,25 @@ class MyTripCollectionVC: UICollectionViewController, UICollectionViewDelegateFl
             cell.viewDetailsBtn.addTarget(self, action: #selector(MyTripCollectionVC.buttonTappedFirst), for: .touchUpInside)
         } else
         
-        if ((indexPath as NSIndexPath).section == 1) {
+        if ((indexPath as NSIndexPath).row == 1) {
             cell.imageViewTour.image = UIImage(named: "tatev_monastery.jpg")
             cell.imageViewText.text = collectionArrayImageView[indexPath.section]
             cell.taxtLabelInfo.text = collectionArrayLabelString[indexPath.section]
+            cell.viewDetailsBtn.removeTarget(self, action: nil, for: .touchUpInside)
             cell.viewDetailsBtn.addTarget(self, action: #selector(MyTripCollectionVC.buttonTappedSecond), for: .touchUpInside)
         } else
         
-        if ((indexPath as NSIndexPath).section == 2) {
+        if ((indexPath as NSIndexPath).row == 2) {
             cell.imageViewTour.image = UIImage(named: "Garni_Temple.jpg")
             cell.imageViewText.text = collectionArrayImageView[indexPath.section]
             cell.taxtLabelInfo.text = collectionArrayLabelString[indexPath.section]
             cell.viewDetailsBtn.addTarget(self, action: #selector(MyTripCollectionVC.buttonTappedThird), for: .touchUpInside)
         }
 
-        
-        // Configure the cell
-        
         return cell
     }
     
+
     
 
     // MARK: UICollectionViewDelegate

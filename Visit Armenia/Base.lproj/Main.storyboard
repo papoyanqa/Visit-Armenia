@@ -47,13 +47,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did You Know?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pz3-ka-d2l">
-                                <rect key="frame" x="30" y="104" width="315" height="39.5"/>
+                                <rect key="frame" x="30" y="104" width="315" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <color key="textColor" red="0.98793814628017651" green="0.99937799873821165" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Yerevan is the capital and largest city of Armenia and one of the world’s oldest continuously inhabited cities" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UcY-M7-vRf">
-                                <rect key="frame" x="30" y="163.5" width="315" height="66.5"/>
+                                <rect key="frame" x="30" y="164" width="315" height="66.5"/>
                                 <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -105,13 +105,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOB-YU-stp">
-                                            <rect key="frame" x="91" y="11" width="200" height="21.5"/>
+                                            <rect key="frame" x="91" y="11" width="200" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="58A-J5-RF2" userLabel="iconView">
-                                            <rect key="frame" x="30" y="5" width="30" height="30.5"/>
+                                            <rect key="frame" x="30" y="5" width="30" height="30"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
@@ -139,13 +139,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9h5-IP-Gp6">
-                                            <rect key="frame" x="91" y="11" width="200" height="21.5"/>
+                                            <rect key="frame" x="91" y="11" width="200" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Vd-Ak-664" userLabel="iconView">
-                                            <rect key="frame" x="30" y="5" width="30" height="30.5"/>
+                                            <rect key="frame" x="30" y="5" width="30" height="30"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
@@ -173,13 +173,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3K-LD-hXF">
-                                            <rect key="frame" x="91" y="11" width="200" height="21.5"/>
+                                            <rect key="frame" x="91" y="11" width="200" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ss0-GE-hK9" userLabel="iconView">
-                                            <rect key="frame" x="30" y="5" width="30" height="30.5"/>
+                                            <rect key="frame" x="30" y="5" width="30" height="30"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
@@ -207,13 +207,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDu-cf-sA7">
-                                            <rect key="frame" x="91" y="11" width="200" height="21.5"/>
+                                            <rect key="frame" x="91" y="11" width="200" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b21-NP-P4z" userLabel="iconView">
-                                            <rect key="frame" x="30" y="5" width="30" height="30.5"/>
+                                            <rect key="frame" x="30" y="5" width="30" height="30"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
@@ -241,13 +241,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mc-pG-Pf2">
-                                            <rect key="frame" x="91" y="11" width="200" height="21.5"/>
+                                            <rect key="frame" x="91" y="11" width="200" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4MS-0X-Auj" userLabel="iconView">
-                                            <rect key="frame" x="30" y="5" width="30" height="30.5"/>
+                                            <rect key="frame" x="30" y="5" width="30" height="30"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
@@ -275,13 +275,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjo-n2-az2">
-                                            <rect key="frame" x="91" y="11" width="200" height="21.5"/>
+                                            <rect key="frame" x="91" y="11" width="200" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HGD-Qj-NCR" userLabel="iconView">
-                                            <rect key="frame" x="30" y="5" width="30" height="30.5"/>
+                                            <rect key="frame" x="30" y="5" width="30" height="30"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
@@ -309,13 +309,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBS-n5-q5R">
-                                            <rect key="frame" x="91" y="11" width="200" height="21.5"/>
+                                            <rect key="frame" x="91" y="11" width="200" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eDu-5x-Uwk" userLabel="iconView">
-                                            <rect key="frame" x="30" y="5" width="30" height="30.5"/>
+                                            <rect key="frame" x="30" y="5" width="30" height="30"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
@@ -343,13 +343,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjv-01-pAw">
-                                            <rect key="frame" x="91" y="11" width="200" height="21.5"/>
+                                            <rect key="frame" x="91" y="11" width="200" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SNM-vd-VSW" userLabel="iconView">
-                                            <rect key="frame" x="30" y="5" width="30" height="30.5"/>
+                                            <rect key="frame" x="30" y="5" width="30" height="30"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
@@ -377,13 +377,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThT-vc-rQb">
-                                            <rect key="frame" x="91" y="11" width="200" height="21.5"/>
+                                            <rect key="frame" x="91" y="11" width="200" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WJD-VS-LPD" userLabel="iconView">
-                                            <rect key="frame" x="30" y="5" width="30" height="30.5"/>
+                                            <rect key="frame" x="30" y="5" width="30" height="30"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
@@ -411,13 +411,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGW-qf-cdo">
-                                            <rect key="frame" x="91" y="11" width="200" height="21.5"/>
+                                            <rect key="frame" x="91" y="11" width="200" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kcG-Bt-Ddr" userLabel="iconView">
-                                            <rect key="frame" x="30" y="5" width="30" height="30.5"/>
+                                            <rect key="frame" x="30" y="5" width="30" height="30"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
@@ -462,7 +462,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="3JE-yW-LAn">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="Oyw-4I-vmL"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="Oyw-4I-vmL">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" id="chu-gi-IOk">
                             <connections>
                                 <action selector="location:" destination="8Re-YL-LIz" id="rug-JK-lLv"/>
@@ -498,7 +500,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Oeb-V0-fua"/>
+                    <navigationItem key="navigationItem" id="Oeb-V0-fua">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="uPJ-7c-D8R"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9J7-QE-Qva" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -523,7 +527,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="mzv-15-lJj"/>
+                    <navigationItem key="navigationItem" id="mzv-15-lJj">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="uuF-QU-EDz"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tzv-Ex-4B3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -542,7 +548,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="k2B-kH-4yr"/>
+                    <navigationItem key="navigationItem" id="k2B-kH-4yr">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="wYJ-GE-Wpm"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BMQ-Pa-cqS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -561,7 +569,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="cNb-rA-gqs"/>
+                    <navigationItem key="navigationItem" id="cNb-rA-gqs">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="NEe-9h-E8n"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P6T-7z-cn3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -580,7 +590,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="IDp-p0-olc"/>
+                    <navigationItem key="navigationItem" id="IDp-p0-olc">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="2Yy-w1-lBR"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kin-dk-Yfb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -599,7 +611,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="wmU-cN-KtT"/>
+                    <navigationItem key="navigationItem" id="wmU-cN-KtT">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="fQ7-fg-ieV"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qhY-nH-VbI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -609,7 +623,7 @@
         <scene sceneID="OBX-dI-Iel">
             <objects>
                 <collectionViewController id="K2s-qJ-p31" customClass="MyTripCollectionVC" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="ZfN-LE-QX5">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="prototypes" id="ZfN-LE-QX5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -620,7 +634,7 @@
                             <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="r4U-YT-9wc" customClass="MyTripCVcell" customModule="Visit_Armenia" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="r4U-YT-9wc" userLabel="cell" customClass="MyTripCVcell" customModule="Visit_Armenia">
                                 <rect key="frame" x="12" y="10" width="351" height="252"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -631,7 +645,7 @@
                                             <rect key="frame" x="8" y="8" width="335" height="173"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{api:title}" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rC-wR-PH9">
-                                            <rect key="frame" x="0.0" y="160.5" width="351" height="20.5"/>
+                                            <rect key="frame" x="0.0" y="160" width="351" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.95677775683559474" green="1" blue="0.96886113125932172" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
@@ -674,6 +688,7 @@
                                     <constraint firstAttribute="trailing" secondItem="dDv-EY-ZwE" secondAttribute="trailing" constant="8" id="pen-4E-zFK"/>
                                     <constraint firstItem="Bmr-Ml-sQS" firstAttribute="leading" secondItem="arN-8R-G1i" secondAttribute="trailing" constant="8" id="uOZ-Mb-WL5"/>
                                 </constraints>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                 <connections>
                                     <outlet property="imageViewText" destination="9rC-wR-PH9" id="pNe-lh-UZc"/>
                                     <outlet property="imageViewTour" destination="dDv-EY-ZwE" id="tEM-pw-unT"/>
@@ -687,9 +702,14 @@
                             <outlet property="delegate" destination="K2s-qJ-p31" id="DLH-PU-tZW"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="Xdu-Od-BFf"/>
+                    <navigationItem key="navigationItem" id="Xdu-Od-BFf1">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="Hgg-03-udX"/>
+                    </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="slideMenu" destination="Hgg-03-udX" id="zOa-GV-tma"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0xC-hJ-xpl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -699,7 +719,7 @@
         <scene sceneID="ar6-L3-4a8">
             <objects>
                 <collectionViewController storyboardIdentifier="detailVC" id="NpZ-0o-AQw" customClass="ViewDetailVC" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="fCk-vY-paF">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="fCk-vY-paF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -758,7 +778,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vxy-cP-I9o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3990" y="4709"/>
+            <point key="canvasLocation" x="3847" y="4709"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5Xm-lC-ZYE">
@@ -791,7 +811,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Ghi-Dj-IJc"/>
+                    <navigationItem key="navigationItem" id="Ghi-Dj-IJc">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="B0p-78-Keb"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X5U-YS-qUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -802,7 +824,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pgx-Dy-ZcF" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Cga-aO-jeu">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cga-aO-jeu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -815,10 +837,10 @@
             </objects>
             <point key="canvasLocation" x="2158" y="-970"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Base Navigation Controller-->
         <scene sceneID="ubq-Kt-FzK">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="02u-bh-Iax" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="02u-bh-Iax" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cft-Nc-CNz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -833,10 +855,10 @@
             </objects>
             <point key="canvasLocation" x="2152.8000000000002" y="-260.41979010494754"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Base Navigation Controller-->
         <scene sceneID="8At-ea-NFu">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DPU-cm-Vp7" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DPU-cm-Vp7" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6kT-Ma-q43">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -851,12 +873,12 @@
             </objects>
             <point key="canvasLocation" x="2152.8000000000002" y="427.73613193403304"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Base Navigation Controller-->
         <scene sceneID="9QQ-ob-nGN">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ewi-qv-o8r" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ewi-qv-o8r" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pz0-Cv-hLS">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="pz0-Cv-hLS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -869,10 +891,10 @@
             </objects>
             <point key="canvasLocation" x="2110" y="4709"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Base Navigation Controller-->
         <scene sceneID="D0o-jr-ztJ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BL3-Gv-eoR" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BL3-Gv-eoR" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="fe9-Fb-vIi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -887,12 +909,12 @@
             </objects>
             <point key="canvasLocation" x="2152.8000000000002" y="1169.865067466267"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Base Navigation Controller-->
         <scene sceneID="ZiY-ux-ZXN">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AQt-Ke-kVT" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AQt-Ke-kVT" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="bdp-4z-6dP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bdp-4z-6dP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -905,12 +927,12 @@
             </objects>
             <point key="canvasLocation" x="2157.5999999999999" y="1856.2218890554725"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Base Navigation Controller-->
         <scene sceneID="hxy-jX-qUI">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NNp-cl-v6r" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NNp-cl-v6r" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="dcx-pD-PtV">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dcx-pD-PtV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -923,12 +945,12 @@
             </objects>
             <point key="canvasLocation" x="2133.5999999999999" y="2561.4692653673164"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Base Navigation Controller-->
         <scene sceneID="RC2-CQ-gQt">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b0y-wX-TdD" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b0y-wX-TdD" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="rxn-9E-thF">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rxn-9E-thF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -941,12 +963,12 @@
             </objects>
             <point key="canvasLocation" x="2111.1999999999998" y="3288.3058470764622"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Base Navigation Controller-->
         <scene sceneID="r2n-2E-Bfi">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wIk-pk-QFZ" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wIk-pk-QFZ" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="qbr-cv-tnh">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qbr-cv-tnh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -959,12 +981,12 @@
             </objects>
             <point key="canvasLocation" x="2109.5999999999999" y="3981.8590704647681"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Base Navigation Controller-->
         <scene sceneID="5nb-ai-8pd">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e9o-xy-Qyd" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e9o-xy-Qyd" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NKH-5J-Zrp">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NKH-5J-Zrp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

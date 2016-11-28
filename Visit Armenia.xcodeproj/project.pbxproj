@@ -201,15 +201,15 @@
 				573C62411DD8A9A70038ECE4 /* TaxiVC.swift */,
 				573C62431DD8A9CA0038ECE4 /* SettingsVC.swift */,
 				573C62471DD8AA050038ECE4 /* AboutVC.swift */,
-				573C61F81DD739050038ECE4 /* Assets.xcassets */,
-				573C61FA1DD739050038ECE4 /* LaunchScreen.storyboard */,
-				573C61FD1DD739050038ECE4 /* Info.plist */,
-				573C62031DD7396C0038ECE4 /* Visit Armenia-Bridging-Header.h */,
 				57E41CED1DDB10C3003F6485 /* MyTripCollectionVC.swift */,
 				57E41CEF1DDB1220003F6485 /* MyTripCVcell.swift */,
 				49A9C7EA1DE88DC20066CBBE /* ViewDetailVC.swift */,
 				49A9C7EC1DE8D0040066CBBE /* ViewDetailsCell.swift */,
 				12DA1B001DEA23CF007DB683 /* BaseNavigationController.swift */,
+				573C61F81DD739050038ECE4 /* Assets.xcassets */,
+				573C61FA1DD739050038ECE4 /* LaunchScreen.storyboard */,
+				573C61FD1DD739050038ECE4 /* Info.plist */,
+				573C62031DD7396C0038ECE4 /* Visit Armenia-Bridging-Header.h */,
 			);
 			path = "Visit Armenia";
 			sourceTree = "<group>";

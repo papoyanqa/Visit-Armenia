@@ -19,50 +19,50 @@ class NearbyPlacesVC: UIViewController {
     let locationManager = CLLocationManager()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+   
         locationManager.requestWhenInUseAuthorization()
         
+        var image: UIImage!
+        var newImage: UIImage!
+        image = UIImage(named: "Menu_100px_1.png")
+        newImage = resizeImage(image: image, newWidth: 25)
+        slideMenu.image = newImage
+        slideMenu.accessibilityFrame = CGRect(x: 0, y: 0, width: 50, height: 50)
+        slideMenu.imageInsets = UIEdgeInsetsMake(0, 0, 0, 0)
+        slideMenu.title = nil
+        slideMenu.tintColor = UIColor.black
         if revealViewController() != nil {
             slideMenu.target = self.revealViewController()
             slideMenu.action = #selector(SWRevealViewController.revealToggle(_:))
+            self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
         }
         
         self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
         placesClient = GMSPlacesClient.shared()
         GMSServices.provideAPIKey("AIzaSyCUb5kRV6wG4Ez5ECgYGNcG0zmSU2IpriQ")
-        let camera = GMSCameraPosition.camera(withLatitude: (locationManager.location?.coordinate.latitude)!, longitude: (locationManager.location?.coordinate.longitude)!, zoom: 20)
+        let camera = GMSCameraPosition.camera(withLatitude: (locationManager.location?.coordinate.latitude)!, longitude: (locationManager.location?.coordinate.longitude)!, zoom: 17)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         view = mapView
         let currentLocation = CLLocationCoordinate2DMake((locationManager.location?.coordinate.latitude)!, (locationManager.location?.coordinate.longitude)!)
         let marker = GMSMarker(position: currentLocation)
         marker.map = mapView
+       
     }
     
     @IBAction func location(_ sender: UIBarButtonItem) {
-//            let center = CLLocationCoordinate2DMake(51.5108396, -0.0922251)
-//            let northEast = CLLocationCoordinate2DMake(center.latitude + 0.001, center.longitude + 0.001)
-//            let southWest = CLLocationCoordinate2DMake(center.latitude - 0.001, center.longitude - 0.001)
-//            let viewport = GMSCoordinateBounds(coordinate: northEast, coordinate: southWest)
-//            let config = GMSPlacePickerConfig(viewport: viewport)
-//            placePicker = GMSPlacePicker(config: config)
-//            
-//            placePicker?.pickPlaceWithCallback({ (place: GMSPlace?, error: NSError?) -> Void in
-//                if let error = error {
-//                    print("Pick Place error: \(error.localizedDescription)")
-//                    return
-//                }
-//                
-//                if let place = place {
-//                    print("Place name \(place.name)")
-//                    print("Place address \(place.formattedAddress)")
-//                    print("Place attributions \(place.attributions)")
-//                } else {
-//                    print("No place selected")
-//                }
-//            })
-        }
+        print(locationManager.location?.coordinate.latitude)
+        print(locationManager.location?.coordinate.longitude)
+    }
     
+    func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage? {
+        let scale = newWidth / image.size.width
+        let newHeight = image.size.height * scale
+        UIGraphicsBeginImageContext(CGSize(width: newWidth, height: newHeight))
+        image.draw(in: CGRect(x: 0, y: 0, width: newWidth, height: newHeight))
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage
+    }
     
 }
 	 
