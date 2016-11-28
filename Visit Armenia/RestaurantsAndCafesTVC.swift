@@ -7,15 +7,22 @@
 //
 
 import UIKit
+import GoogleMaps
+import GooglePlaces
 import Kingfisher
 
 class RestaurantsAndCafesTVC: UITableViewController {
-
     var venuesSearch: VenuesSearchModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Networking.searchVenues(lat: 40.196346, lng: 44.4798429, cat: "4d4b7105d754a06374d81259", completion: { (response: VenuesSearchModel?, error: Error?) in
+        var placesClient: GMSPlacesClient?
+        let locationManager = CLLocationManager()
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
+        placesClient = GMSPlacesClient.shared()
+        GMSServices.provideAPIKey("AIzaSyCUb5kRV6wG4Ez5ECgYGNcG0zmSU2IpriQ")
+        Networking.searchVenues(lat: (locationManager.location?.coordinate.latitude)!, lng: (locationManager.location?.coordinate.longitude)!, cat: "4d4b7105d754a06374d81259", completion: { (response: VenuesSearchModel?, error: Error?) in
             if response != nil {
                 self.venuesSearch = response
                 self.tableView.reloadData()

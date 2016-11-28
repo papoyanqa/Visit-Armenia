@@ -22,7 +22,6 @@
 		573C620A1DD73BF30038ECE4 /* SlideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573C62091DD73BF30038ECE4 /* SlideTableViewController.swift */; };
 		573C620C1DD895CA0038ECE4 /* ShoppingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573C620B1DD895CA0038ECE4 /* ShoppingVC.swift */; };
 		573C620E1DD895EB0038ECE4 /* NearbyPlacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573C620D1DD895EB0038ECE4 /* NearbyPlacesVC.swift */; };
-		573C62101DD896360038ECE4 /* RestaurantsAndCafesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573C620F1DD896360038ECE4 /* RestaurantsAndCafesVC.swift */; };
 		573C62131DD89DDB0038ECE4 /* First Loading Splashscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C62121DD89DDB0038ECE4 /* First Loading Splashscreen.png */; };
 		573C62271DD89E540038ECE4 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 573C62151DD89E540038ECE4 /* Contents.json */; };
 		573C62281DD89E540038ECE4 /* Icon-App-20x20@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C62161DD89E540038ECE4 /* Icon-App-20x20@1x.png */; };
@@ -71,6 +70,7 @@
 		57E9ADB61DECA6D900D211FC /* RestaurantsAndCafesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E9ADB51DECA6D900D211FC /* RestaurantsAndCafesTVC.swift */; };
 		57E9ADB81DECA70A00D211FC /* RestaurantsAndCafesTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E9ADB71DECA70A00D211FC /* RestaurantsAndCafesTVCell.swift */; };
 		57E9ADBA1DECAEE100D211FC /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E9ADB91DECAEE100D211FC /* PhotoModel.swift */; };
+		57E9ADBC1DECC3B700D211FC /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E9ADBB1DECC3B700D211FC /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,7 +94,6 @@
 		573C62091DD73BF30038ECE4 /* SlideTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideTableViewController.swift; path = ../SlideTableViewController.swift; sourceTree = "<group>"; };
 		573C620B1DD895CA0038ECE4 /* ShoppingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingVC.swift; sourceTree = "<group>"; };
 		573C620D1DD895EB0038ECE4 /* NearbyPlacesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesVC.swift; sourceTree = "<group>"; };
-		573C620F1DD896360038ECE4 /* RestaurantsAndCafesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantsAndCafesVC.swift; sourceTree = "<group>"; };
 		573C62121DD89DDB0038ECE4 /* First Loading Splashscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "First Loading Splashscreen.png"; sourceTree = "<group>"; };
 		573C62151DD89E540038ECE4 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		573C62161DD89E540038ECE4 /* Icon-App-20x20@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@1x.png"; sourceTree = "<group>"; };
@@ -143,6 +142,7 @@
 		57E9ADB51DECA6D900D211FC /* RestaurantsAndCafesTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantsAndCafesTVC.swift; sourceTree = "<group>"; };
 		57E9ADB71DECA70A00D211FC /* RestaurantsAndCafesTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantsAndCafesTVCell.swift; sourceTree = "<group>"; };
 		57E9ADB91DECAEE100D211FC /* PhotoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		57E9ADBB1DECC3B700D211FC /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = ../Location.swift; sourceTree = "<group>"; };
 		82B8FB5DD5BB4C774D9475CE /* Pods-Visit Armenia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Visit Armenia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Visit Armenia/Pods-Visit Armenia.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -199,6 +199,10 @@
 				573C62111DD89DC60038ECE4 /* DesignElements */,
 				573C62041DD7396C0038ECE4 /* SWRevealViewController.h */,
 				573C62051DD7396C0038ECE4 /* SWRevealViewController.m */,
+				573C61F81DD739050038ECE4 /* Assets.xcassets */,
+				573C61FA1DD739050038ECE4 /* LaunchScreen.storyboard */,
+				573C61FD1DD739050038ECE4 /* Info.plist */,
+				573C62031DD7396C0038ECE4 /* Visit Armenia-Bridging-Header.h */,
 				573C61F51DD739050038ECE4 /* Main.storyboard */,
 				573C61F11DD739040038ECE4 /* AppDelegate.swift */,
 				573C62091DD73BF30038ECE4 /* SlideTableViewController.swift */,
@@ -206,7 +210,6 @@
 				573C62071DD73A7C0038ECE4 /* HomeVC.swift */,
 				573C620B1DD895CA0038ECE4 /* ShoppingVC.swift */,
 				573C620D1DD895EB0038ECE4 /* NearbyPlacesVC.swift */,
-				573C620F1DD896360038ECE4 /* RestaurantsAndCafesVC.swift */,
 				573C623B1DD8A3620038ECE4 /* SlideTableViewCell.swift */,
 				573C623D1DD8A94D0038ECE4 /* EventsVC.swift */,
 				573C623F1DD8A9820038ECE4 /* PopularItinerariesVC.swift */,
@@ -218,16 +221,13 @@
 				49A9C7EA1DE88DC20066CBBE /* ViewDetailVC.swift */,
 				49A9C7EC1DE8D0040066CBBE /* ViewDetailsCell.swift */,
 				12DA1B001DEA23CF007DB683 /* BaseNavigationController.swift */,
-				573C61F81DD739050038ECE4 /* Assets.xcassets */,
-				573C61FA1DD739050038ECE4 /* LaunchScreen.storyboard */,
-				573C61FD1DD739050038ECE4 /* Info.plist */,
-				573C62031DD7396C0038ECE4 /* Visit Armenia-Bridging-Header.h */,
 				57D745D31DEC8D2F002B9B75 /* Networking.swift */,
 				57E9ADB11DEC8F7D00D211FC /* VenueModel.swift */,
 				57E9ADB31DEC938000D211FC /* VenuesSearchModel.swift */,
 				57E9ADB51DECA6D900D211FC /* RestaurantsAndCafesTVC.swift */,
 				57E9ADB71DECA70A00D211FC /* RestaurantsAndCafesTVCell.swift */,
 				57E9ADB91DECAEE100D211FC /* PhotoModel.swift */,
+				57E9ADBB1DECC3B700D211FC /* Location.swift */,
 			);
 			path = "Visit Armenia";
 			sourceTree = "<group>";
@@ -504,6 +504,7 @@
 				573C623E1DD8A94D0038ECE4 /* EventsVC.swift in Sources */,
 				57E41CEE1DDB10C3003F6485 /* MyTripCollectionVC.swift in Sources */,
 				49A9C7EB1DE88DC20066CBBE /* ViewDetailVC.swift in Sources */,
+				57E9ADBC1DECC3B700D211FC /* Location.swift in Sources */,
 				573C61F41DD739040038ECE4 /* ViewController.swift in Sources */,
 				12DA1B011DEA23CF007DB683 /* BaseNavigationController.swift in Sources */,
 				573C62081DD73A7C0038ECE4 /* HomeVC.swift in Sources */,
@@ -513,7 +514,6 @@
 				573C620A1DD73BF30038ECE4 /* SlideTableViewController.swift in Sources */,
 				57D745D41DEC8D2F002B9B75 /* Networking.swift in Sources */,
 				57E9ADB21DEC8F7D00D211FC /* VenueModel.swift in Sources */,
-				573C62101DD896360038ECE4 /* RestaurantsAndCafesVC.swift in Sources */,
 				573C61F21DD739040038ECE4 /* AppDelegate.swift in Sources */,
 				573C62061DD7396C0038ECE4 /* SWRevealViewController.m in Sources */,
 				49A9C7ED1DE8D0040066CBBE /* ViewDetailsCell.swift in Sources */,

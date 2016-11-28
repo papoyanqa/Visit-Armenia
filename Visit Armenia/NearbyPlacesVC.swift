@@ -9,8 +9,6 @@
 import UIKit
 import GoogleMaps
 import GooglePlaces
-import GoogleMapsCore
-
 
 class NearbyPlacesVC: UIViewController {
     @IBOutlet var location: UIBarButtonItem!
@@ -36,7 +34,7 @@ class NearbyPlacesVC: UIViewController {
             slideMenu.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
         }
-        
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
         self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
         placesClient = GMSPlacesClient.shared()
         GMSServices.provideAPIKey("AIzaSyCUb5kRV6wG4Ez5ECgYGNcG0zmSU2IpriQ")
