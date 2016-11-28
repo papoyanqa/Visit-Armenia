@@ -91,9 +91,9 @@ class MyTripCollectionVC: UICollectionViewController, UICollectionViewDelegateFl
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MyTripCVcell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! MyTripCVcell
         
-        if ((indexPath as NSIndexPath).section == 0) {
+        if ((indexPath as NSIndexPath).row == 0) {
             cell.imageViewTour.image = UIImage(named: "Yerevan.jpg")
             cell.imageViewText.text = collectionArrayImageView[indexPath.section]
             cell.taxtLabelInfo.text = collectionArrayLabelString[indexPath.section]
@@ -101,14 +101,15 @@ class MyTripCollectionVC: UICollectionViewController, UICollectionViewDelegateFl
             cell.viewDetailsBtn.addTarget(self, action: #selector(MyTripCollectionVC.buttonTappedFirst), for: .touchUpInside)
         }
         
-        if ((indexPath as NSIndexPath).section == 1) {
+        if ((indexPath as NSIndexPath).row == 1) {
             cell.imageViewTour.image = UIImage(named: "tatev_monastery.jpg")
             cell.imageViewText.text = collectionArrayImageView[indexPath.section]
             cell.taxtLabelInfo.text = collectionArrayLabelString[indexPath.section]
+            cell.viewDetailsBtn.removeTarget(self, action: nil, for: .touchUpInside)
             cell.viewDetailsBtn.addTarget(self, action: #selector(MyTripCollectionVC.buttonTappedSecond), for: .touchUpInside)
         }
         
-        if ((indexPath as NSIndexPath).section == 2) {
+        if ((indexPath as NSIndexPath).row == 2) {
             cell.imageViewTour.image = UIImage(named: "Garni_Temple.jpg")
             cell.imageViewText.text = collectionArrayImageView[indexPath.section]
             cell.taxtLabelInfo.text = collectionArrayLabelString[indexPath.section]
