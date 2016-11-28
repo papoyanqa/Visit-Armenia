@@ -53,7 +53,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Yerevan is the capital and largest city of Armenia and one of the world’s oldest continuously inhabited cities" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UcY-M7-vRf">
-                                <rect key="frame" x="30" y="164" width="315" height="67"/>
+                                <rect key="frame" x="30" y="164" width="315" height="66.5"/>
                                 <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -446,7 +446,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LPU-c9-rom" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-954.39999999999998" y="1593.5532233883059"/>
+            <point key="canvasLocation" x="-954" y="1856"/>
         </scene>
         <!--NearbyPlacesVC-->
         <scene sceneID="CG4-Qz-iO9">
@@ -642,7 +642,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dDv-EY-ZwE">
-                                            <rect key="frame" x="0.0" y="0.0" width="351" height="197"/>
+                                            <rect key="frame" x="8" y="8" width="335" height="173"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{api:title}" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rC-wR-PH9">
                                             <rect key="frame" x="0.0" y="160" width="351" height="21"/>
@@ -677,15 +677,15 @@
                                     <constraint firstItem="arN-8R-G1i" firstAttribute="leading" secondItem="r4U-YT-9wc" secondAttribute="leading" constant="8" id="35f-GE-4KD"/>
                                     <constraint firstAttribute="bottom" secondItem="Bmr-Ml-sQS" secondAttribute="bottom" constant="8" id="9dA-eR-fRy"/>
                                     <constraint firstAttribute="trailing" secondItem="9rC-wR-PH9" secondAttribute="trailing" id="Bxu-Nr-Jet"/>
-                                    <constraint firstItem="dDv-EY-ZwE" firstAttribute="top" secondItem="r4U-YT-9wc" secondAttribute="top" id="FNH-29-6Qf"/>
-                                    <constraint firstItem="Bmr-Ml-sQS" firstAttribute="top" secondItem="dDv-EY-ZwE" secondAttribute="bottom" constant="8" id="L3d-w6-U3h"/>
-                                    <constraint firstItem="dDv-EY-ZwE" firstAttribute="leading" secondItem="r4U-YT-9wc" secondAttribute="leading" id="Oua-yc-9AS"/>
-                                    <constraint firstItem="arN-8R-G1i" firstAttribute="top" secondItem="dDv-EY-ZwE" secondAttribute="bottom" constant="8" id="Pk1-y5-FzQ"/>
+                                    <constraint firstItem="dDv-EY-ZwE" firstAttribute="top" secondItem="r4U-YT-9wc" secondAttribute="top" constant="8" id="FNH-29-6Qf"/>
+                                    <constraint firstItem="Bmr-Ml-sQS" firstAttribute="top" secondItem="dDv-EY-ZwE" secondAttribute="bottom" constant="24" id="L3d-w6-U3h"/>
+                                    <constraint firstItem="dDv-EY-ZwE" firstAttribute="leading" secondItem="r4U-YT-9wc" secondAttribute="leading" constant="8" id="Oua-yc-9AS"/>
+                                    <constraint firstItem="arN-8R-G1i" firstAttribute="top" secondItem="dDv-EY-ZwE" secondAttribute="bottom" constant="24" id="Pk1-y5-FzQ"/>
                                     <constraint firstItem="9rC-wR-PH9" firstAttribute="leading" secondItem="r4U-YT-9wc" secondAttribute="leading" id="cut-v3-55O"/>
                                     <constraint firstAttribute="bottom" secondItem="arN-8R-G1i" secondAttribute="bottom" constant="8" id="fPK-UV-PRA"/>
                                     <constraint firstAttribute="trailing" secondItem="Bmr-Ml-sQS" secondAttribute="trailing" constant="8" id="gxV-Tk-XQM"/>
-                                    <constraint firstItem="9rC-wR-PH9" firstAttribute="bottom" secondItem="dDv-EY-ZwE" secondAttribute="bottom" constant="-16" id="ota-WY-Ahd"/>
-                                    <constraint firstAttribute="trailing" secondItem="dDv-EY-ZwE" secondAttribute="trailing" id="pen-4E-zFK"/>
+                                    <constraint firstItem="9rC-wR-PH9" firstAttribute="bottom" secondItem="dDv-EY-ZwE" secondAttribute="bottom" id="ota-WY-Ahd"/>
+                                    <constraint firstAttribute="trailing" secondItem="dDv-EY-ZwE" secondAttribute="trailing" constant="8" id="pen-4E-zFK"/>
                                     <constraint firstItem="Bmr-Ml-sQS" firstAttribute="leading" secondItem="arN-8R-G1i" secondAttribute="trailing" constant="8" id="uOZ-Mb-WL5"/>
                                 </constraints>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
@@ -713,7 +713,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0xC-hJ-xpl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3050" y="4709"/>
+            <point key="canvasLocation" x="3048.8000000000002" y="4708.695652173913"/>
         </scene>
         <!--View DetailVC-->
         <scene sceneID="ar6-L3-4a8">
@@ -778,7 +778,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vxy-cP-I9o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3774" y="4709"/>
+            <point key="canvasLocation" x="3847" y="4709"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5Xm-lC-ZYE">
@@ -878,7 +878,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ewi-qv-o8r" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pz0-Cv-hLS">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="pz0-Cv-hLS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -896,7 +896,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BL3-Gv-eoR" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fe9-Fb-vIi">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="fe9-Fb-vIi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -986,7 +986,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e9o-xy-Qyd" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NKH-5J-Zrp">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NKH-5J-Zrp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
