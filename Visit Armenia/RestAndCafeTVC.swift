@@ -9,6 +9,8 @@
 import UIKit
 
 class RestAndCafeTVC: UITableViewCell {
+    @IBOutlet weak var iconImage: UIImageView!
+    @IBOutlet weak var placeName: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

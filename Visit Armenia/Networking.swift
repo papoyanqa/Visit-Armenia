@@ -29,7 +29,7 @@ class Networking: NSObject {
         let url = "https://api.foursquare.com/v2/venues/\(id)/photos?limit=1&client_id=\(Networking.clientId)&client_secret=\(Networking.clientSecret)&v=20161128"
         Alamofire.request(url).responseArray(keyPath: "response.photos.items") { (response: DataResponse<[PhotoModel]>) in
             if let photos = response.result.value {
-                completion((photos.first?.prefix)! + "200x200" + (photos.first?.suffix)!, nil)
+                completion((photos.first?.prefix)! + "100x100" + (photos.first?.suffix)!, nil)
             } else {
                 completion(nil, response.result.error)
             }
