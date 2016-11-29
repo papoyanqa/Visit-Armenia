@@ -9,12 +9,14 @@
 import UIKit
 
 class HomeVC: UIViewController {
+    @IBOutlet weak var imageVIew: UIImageView!
     @IBOutlet weak var slideMenu: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         var image: UIImage!
         var newImage: UIImage!
+        imageVIew.image = UIImage(named: "MainPageBackgroun_opera.png")
         image = UIImage(named: "Menu_100px_1.png")
         newImage = resizeImage(image: image, newWidth: 25)
         slideMenu.image = newImage
@@ -28,6 +30,7 @@ class HomeVC: UIViewController {
                 slideMenu.action = #selector(SWRevealViewController.revealToggle(_:))
                 self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
         }
+
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

@@ -15,7 +15,7 @@ class Networking: NSObject {
     static let clientSecret = "41JB3UGYDU5WOCVCBFF51B5UGBVNUFF4PKPJ5TNJUXZVPKNE"
     
     static func searchVenues(lat: Double, lng: Double, cat: String, completion: @escaping (_ result: VenuesSearchModel?, _ error: Error?) -> Void) {
-        let url = "https://api.foursquare.com/v2/venues/search?ll=\(lat),\(lng)&client_id=\(Networking.clientId)&client_secret=\(Networking.clientSecret)&v=20161128&radius=5000&categoryId=\(cat)"
+        let url = "https://api.foursquare.com/v2/venues/search?ll=\(lat),\(lng)&client_id=\(Networking.clientId)&client_secret=\(Networking.clientSecret)&v=20161128&radius=2000&categoryId=\(cat)"
         Alamofire.request(url).responseObject { (response: DataResponse<VenuesSearchModel>) in
             if let search = response.result.value {
                 completion(search, nil)
@@ -36,7 +36,4 @@ class Networking: NSObject {
         }
     }
     
-//    func getCategories() {
-//        let url = "https://api.foursquare.com/v2/venues/categories?client_id=\(Networking.clientId)&client_secret=\(Networking.clientSecret)&v=20161128"
-//    }
 }

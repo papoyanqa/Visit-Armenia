@@ -71,6 +71,7 @@
 		57E9ADB81DECA70A00D211FC /* RestaurantsAndCafesTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E9ADB71DECA70A00D211FC /* RestaurantsAndCafesTVCell.swift */; };
 		57E9ADBA1DECAEE100D211FC /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E9ADB91DECAEE100D211FC /* PhotoModel.swift */; };
 		57E9ADBC1DECC3B700D211FC /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E9ADBB1DECC3B700D211FC /* Location.swift */; };
+		57E9ADBE1DEDBF5100D211FC /* RestAndCafeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E9ADBD1DEDBF5100D211FC /* RestAndCafeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -143,6 +144,7 @@
 		57E9ADB71DECA70A00D211FC /* RestaurantsAndCafesTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantsAndCafesTVCell.swift; sourceTree = "<group>"; };
 		57E9ADB91DECAEE100D211FC /* PhotoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 		57E9ADBB1DECC3B700D211FC /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = ../Location.swift; sourceTree = "<group>"; };
+		57E9ADBD1DEDBF5100D211FC /* RestAndCafeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestAndCafeVC.swift; sourceTree = "<group>"; };
 		82B8FB5DD5BB4C774D9475CE /* Pods-Visit Armenia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Visit Armenia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Visit Armenia/Pods-Visit Armenia.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -228,6 +230,7 @@
 				57E9ADB71DECA70A00D211FC /* RestaurantsAndCafesTVCell.swift */,
 				57E9ADB91DECAEE100D211FC /* PhotoModel.swift */,
 				57E9ADBB1DECC3B700D211FC /* Location.swift */,
+				57E9ADBD1DEDBF5100D211FC /* RestAndCafeVC.swift */,
 			);
 			path = "Visit Armenia";
 			sourceTree = "<group>";
@@ -501,6 +504,7 @@
 				573C62441DD8A9CA0038ECE4 /* SettingsVC.swift in Sources */,
 				573C620C1DD895CA0038ECE4 /* ShoppingVC.swift in Sources */,
 				57E9ADB61DECA6D900D211FC /* RestaurantsAndCafesTVC.swift in Sources */,
+				57E9ADBE1DEDBF5100D211FC /* RestAndCafeVC.swift in Sources */,
 				573C623E1DD8A94D0038ECE4 /* EventsVC.swift in Sources */,
 				57E41CEE1DDB10C3003F6485 /* MyTripCollectionVC.swift in Sources */,
 				49A9C7EB1DE88DC20066CBBE /* ViewDetailVC.swift in Sources */,

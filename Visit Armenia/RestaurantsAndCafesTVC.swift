@@ -12,10 +12,25 @@ import GooglePlaces
 import Kingfisher
 
 class RestaurantsAndCafesTVC: UITableViewController {
+    @IBOutlet weak var slideMenu: UIBarButtonItem!
+    var image: UIImage!
+    var newImage: UIImage!
     var venuesSearch: VenuesSearchModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        image = UIImage(named: "Menu_100px_1.png")
+        newImage = resizeImage(image: image, newWidth: 25)
+        slideMenu.image = newImage
+        slideMenu.accessibilityFrame = CGRect(x: 0, y: 0, width: 50, height: 50)
+        slideMenu.imageInsets = UIEdgeInsetsMake(0, 0, 0, 0)
+        slideMenu.tintColor = UIColor.black
+        if revealViewController() != nil {
+            slideMenu.target = self.revealViewController()
+            slideMenu.action = #selector(SWRevealViewController.revealToggle(_:))
+            self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
+        }
+
         var placesClient: GMSPlacesClient?
         let locationManager = CLLocationManager()
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -36,6 +51,16 @@ class RestaurantsAndCafesTVC: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage? {
+        let scale = newWidth / image.size.width
+        let newHeight = image.size.height * scale
+        UIGraphicsBeginImageContext(CGSize(width: newWidth, height: newHeight))
+        image.draw(in: CGRect(x: 0, y: 0, width: newWidth, height: newHeight))
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage
     }
 
     override func didReceiveMemoryWarning() {
