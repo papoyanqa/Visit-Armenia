@@ -13,9 +13,12 @@ import GoogleMapsCore
 
 
 class RestAndCafeTV: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
     @IBOutlet weak var placesTV: UITableView!
     @IBOutlet weak var mapViewMain: UIView!
     @IBOutlet weak var slideMenu: UIBarButtonItem!
+
+    
     var image: UIImage!
     var newImage: UIImage!
     var venuesSearch: VenuesSearchModel!
@@ -38,13 +41,24 @@ class RestAndCafeTV: UIViewController, UITableViewDelegate, UITableViewDataSourc
             slideMenu.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
         }
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
-        placesClient = GMSPlacesClient.shared()
-        GMSServices.provideAPIKey("AIzaSyCUb5kRV6wG4Ez5ECgYGNcG0zmSU2IpriQ")
-        let camera = GMSCameraPosition.camera(withLatitude: (locationManager.location?.coordinate.latitude)!, longitude: (locationManager.location?.coordinate.longitude)!, zoom: 17)
-        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
-        self.mapViewMain = mapView
+        
+//        GMSServices.provideAPIKey("AIzaSyCUb5kRV6wG4Ez5ECgYGNcG0zmSU2IpriQ")
+//        let camera = GMSCameraPosition.camera(withLatitude: (locationManager.location?.coordinate.latitude)!, longitude: (locationManager.location?.coordinate.longitude)!, zoom: 6)
+//        let mapView = GMSMapView.map(withFrame: .zero, camera: camera)
+//        mapView.mapType = kGMSTypeSatellite
+//        mapView.isMyLocationEnabled = true
+        
+        OperationQueue.main.addOperation {
+            let mapVC = MapViewController()
+            mapVC.latitude = 44.30
+            mapVC.longitude = 44.50
+            self.addChildViewController(mapVC)
+            mapVC.didMove(toParentViewController: self)
+            mapVC.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            mapVC.view.center = self.mapViewMain.center
+            self.mapViewMain.autoresizesSubviews = true
+            self.mapViewMain.addSubview(mapVC.view)
+        }
         
         Networking.searchVenues(lat: (locationManager.location?.coordinate.latitude)!, lng: (locationManager.location?.coordinate.longitude)!, cat: "4d4b7105d754a06374d81259", completion: { (response: VenuesSearchModel?, error: Error?) in
             if response != nil {
@@ -52,7 +66,7 @@ class RestAndCafeTV: UIViewController, UITableViewDelegate, UITableViewDataSourc
                 self.placesTV.reloadData()
             }
         })
-
+        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -68,14 +82,15 @@ class RestAndCafeTV: UIViewController, UITableViewDelegate, UITableViewDataSourc
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! RestAndCafeTVC
         let venue = venuesSearch.venues[indexPath.row]
         
-                cell.placeName.text = venue.name
-        //        cell.placeNumber.text = venue.formattedPhone
-        //        cell.placeAdress.text = venue.formattedAddress.joined(separator: ", ")
-        //        cell.iconImage.image = nil
-                Networking.getPhotoUrl(id: venue.id, completion:  { (result: String?, error: Error?) in
-                    let url = URL(string: result!)
-                    cell.iconImage.kf.setImage(with: url)
-                })
+        cell.placeName.text = venue.name
+        Networking.getPhotoUrl(id: venue.id, completion:  { (result: String?, error: Error?) in
+            let url = URL(string: result!)
+            if url == nil {
+                cell.iconImage.image = UIImage(named: "Garni.jpg")
+            } else {
+                cell.iconImage.kf.setImage(with: url)
+            }
+        })
         
         return cell
     }
@@ -91,6 +106,6 @@ class RestAndCafeTV: UIViewController, UITableViewDelegate, UITableViewDataSourc
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        // cell selected code here
+        
     }
 }

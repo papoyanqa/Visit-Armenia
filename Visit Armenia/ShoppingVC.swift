@@ -7,21 +7,77 @@
 //
 
 import UIKit
+import GoogleMaps
+import GooglePlaces
 
-class ShoppingVC: UIViewController {
+class ShoppingVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet weak var placesTV: UITableView!
+    @IBOutlet weak var mapViewMain: UIView!
+    @IBOutlet weak var slideMenu: UIBarButtonItem!
+    
+    var image: UIImage!
+    var newImage: UIImage!
+    var venuesSearch: VenuesSearchModel!
+    var placesClient: GMSPlacesClient?
+    let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.barTintColor = UIColor.clear
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        navigationController?.navigationBar.shadowImage = UIImage()
-        self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
-        // Do any additional setup after loading the view.
+        
+        locationManager.requestWhenInUseAuthorization()
+        image = UIImage(named: "Menu_100px_1.png")
+        newImage = resizeImage(image: image, newWidth: 25)
+        slideMenu.image = newImage
+        slideMenu.accessibilityFrame = CGRect(x: 0, y: 0, width: 50, height: 50)
+        slideMenu.imageInsets = UIEdgeInsetsMake(0, 0, 0, 0)
+        slideMenu.title = nil
+        slideMenu.tintColor = UIColor.black
+        if revealViewController() != nil {
+            slideMenu.target = self.revealViewController()
+            slideMenu.action = #selector(SWRevealViewController.revealToggle(_:))
+            self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
+        }
+        
+        GMSServices.provideAPIKey("AIzaSyCUb5kRV6wG4Ez5ECgYGNcG0zmSU2IpriQ")
+        let camera = GMSCameraPosition.camera(withLatitude: (locationManager.location?.coordinate.latitude)!, longitude: (locationManager.location?.coordinate.longitude)!, zoom: 6)
+        let mapView = GMSMapView.map(withFrame: .zero, camera: camera)
+        mapView.mapType = kGMSTypeSatellite
+        mapView.isMyLocationEnabled = true
+        //        view = mapView
+        
+        
+        
+        Networking.searchVenues(lat: (locationManager.location?.coordinate.latitude)!, lng: (locationManager.location?.coordinate.longitude)!, cat: "4d4b7105d754a06378d81259", completion: { (response: VenuesSearchModel?, error: Error?) in
+            if response != nil {
+                self.venuesSearch = response
+                self.placesTV.reloadData()
+            }
+        })
+        
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return venuesSearch != nil ? venuesSearch.venues.count : 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! RestAndCafeTVC
+        let venue = venuesSearch.venues[indexPath.row]
+        
+        cell.placeName.text = venue.name
+        Networking.getPhotoUrl(id: venue.id, completion:  { (result: String?, error: Error?) in
+            let url = URL(string: result!)
+          
+                cell.iconImage.kf.setImage(with: url)
+            
+        })
+        
+        return cell
     }
     
     func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage? {
@@ -34,14 +90,7 @@ class ShoppingVC: UIViewController {
         return newImage
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        // cell selected code here
+    }
 }
