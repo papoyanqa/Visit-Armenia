@@ -14,7 +14,7 @@ class RestAndCafeTVC: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        backgroundView?.backgroundColor = UIColor(red: 239, green: 239, blue: 246, alpha: 1)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

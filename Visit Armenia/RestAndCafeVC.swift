@@ -13,11 +13,11 @@ import GoogleMapsCore
 
 
 class RestAndCafeTV: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     @IBOutlet weak var placesTV: UITableView!
     @IBOutlet weak var mapViewMain: UIView!
     @IBOutlet weak var slideMenu: UIBarButtonItem!
-
+    
     
     var image: UIImage!
     var newImage: UIImage!
@@ -27,7 +27,7 @@ class RestAndCafeTV: UIViewController, UITableViewDelegate, UITableViewDataSourc
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationController?.navigationBar.barTintColor = UIColor(red: 246, green: 247, blue: 249, alpha: 1)
         locationManager.requestWhenInUseAuthorization()
         image = UIImage(named: "Menu_100px_1.png")
         newImage = resizeImage(image: image, newWidth: 25)
@@ -41,13 +41,7 @@ class RestAndCafeTV: UIViewController, UITableViewDelegate, UITableViewDataSourc
             slideMenu.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
         }
-        
-//        GMSServices.provideAPIKey("AIzaSyCUb5kRV6wG4Ez5ECgYGNcG0zmSU2IpriQ")
-//        let camera = GMSCameraPosition.camera(withLatitude: (locationManager.location?.coordinate.latitude)!, longitude: (locationManager.location?.coordinate.longitude)!, zoom: 6)
-//        let mapView = GMSMapView.map(withFrame: .zero, camera: camera)
-//        mapView.mapType = kGMSTypeSatellite
-//        mapView.isMyLocationEnabled = true
-        
+
         OperationQueue.main.addOperation {
             let mapVC = MapViewController()
             mapVC.latitude = 44.30
@@ -105,7 +99,21 @@ class RestAndCafeTV: UIViewController, UITableViewDelegate, UITableViewDataSourc
         return newImage
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if (indexPath as NSIndexPath).row == indexPath.row {
+            Networking.searchVenues(lat: (locationManager.location?.coordinate.latitude)!, lng: (locationManager.location?.coordinate.longitude)!, cat: "4d4b7105d754a06374d81259", completion: { (response: VenuesSearchModel?, error: Error?) in
+                if response != nil {
+                    self.venuesSearch = response
+                    self.placesTV.reloadData()
+                    let mapVC = MapViewController()
+                    let venue = self.venuesSearch.venues[indexPath.row]
+                    mapVC.latitude = venue.lat
+                    mapVC.longitude = venue.lng
+                }
+            })
+            
+        }
         
     }
+    
 }

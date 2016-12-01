@@ -227,9 +227,6 @@
 				49A9C7EA1DE88DC20066CBBE /* ViewDetailVC.swift */,
 				49A9C7EC1DE8D0040066CBBE /* ViewDetailsCell.swift */,
 				12DA1B001DEA23CF007DB683 /* BaseNavigationController.swift */,
-				57D745D31DEC8D2F002B9B75 /* Networking.swift */,
-				57E9ADB11DEC8F7D00D211FC /* VenueModel.swift */,
-				57E9ADB31DEC938000D211FC /* VenuesSearchModel.swift */,
 				57E9ADB51DECA6D900D211FC /* RestaurantsAndCafesTVC.swift */,
 				57E9ADB71DECA70A00D211FC /* RestaurantsAndCafesTVCell.swift */,
 				57E9ADB91DECAEE100D211FC /* PhotoModel.swift */,
@@ -237,6 +234,7 @@
 				57E9ADBD1DEDBF5100D211FC /* RestAndCafeVC.swift */,
 				57E9ADBF1DEDC06300D211FC /* RestAndCafeTVC.swift */,
 				57E9ADC11DEF1A4600D211FC /* MapViewController.swift */,
+				574C6DDE1DEF7A60000BD20E /* Networking */,
 			);
 			path = "Visit Armenia";
 			sourceTree = "<group>";
@@ -297,6 +295,16 @@
 				573C62541DD8AD870038ECE4 /* Taxi_100px.png */,
 			);
 			path = "Icons 2";
+			sourceTree = "<group>";
+		};
+		574C6DDE1DEF7A60000BD20E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				57D745D31DEC8D2F002B9B75 /* Networking.swift */,
+				57E9ADB11DEC8F7D00D211FC /* VenueModel.swift */,
+				57E9ADB31DEC938000D211FC /* VenuesSearchModel.swift */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
