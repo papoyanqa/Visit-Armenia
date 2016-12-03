@@ -18,6 +18,16 @@ class ViewDetailVC: UICollectionViewController {
         super.viewDidLoad()
         collectionIndex = ["1","2"]
         
+        if index == 1 {
+            
+        }
+        
+        
+        
+        
+        
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -48,7 +58,15 @@ class ViewDetailVC: UICollectionViewController {
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return collectionIndex.count
+        let a: Int!
+        
+        if index == 1 {
+            a = 1
+        } else {
+            a = collectionIndex.count
+        }
+        
+        return a
     }
     
     
@@ -61,9 +79,14 @@ class ViewDetailVC: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ViewDetailsCell
         
         if (index == 1) {
-            if ((indexPath as NSIndexPath).section == 0){
-                cell.imageView.image = UIImage(named: "tatev_monastery.jpg")
-                cell.textView.text = "asdasdasdasdasdasdasd"
+            if ((indexPath as NSIndexPath).row == 0){
+                cell.imageView.image = UIImage(named: "Yerevan.jpg")
+                cell.textView.text = "If someone wants to visit Armenia the journey should start from the heart of the country: Yerevan.  Yerevan is a city of contrasts. Yerevan is a little bright city with charming people in it. It’s hard to get bored in the city as there is so much to see, that you will be confused where to start:  here you can see Soviet style buildings next to modern ones, also some few traces of city’s ancient past remain, many museums, churches, theatres, cozy cafes and a vast variety of taverns serving national cuisine. So let’s have a look at the list of the best places of Yerevan."
+            }
+            
+            if ((indexPath as NSIndexPath).row == 1) {
+                cell.imageView.image = nil
+                cell.textView.text = nil
             }
         }
         

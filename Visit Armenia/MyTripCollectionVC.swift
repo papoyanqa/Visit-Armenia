@@ -75,7 +75,7 @@ class MyTripCollectionVC: UICollectionViewController, UICollectionViewDelegateFl
     func buttonTappedFirst() {
         let vc = storyboard?.instantiateViewController(withIdentifier: "detailVC") as! ViewDetailVC
         vc.index = 1
-         self.navigationController?.pushViewController(vc, animated: true)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func buttonTappedSecond() {

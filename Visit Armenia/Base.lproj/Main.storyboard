@@ -885,7 +885,7 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="Xdu-Od-BFf1">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="Hgg-03-udX"/>
+                        <barButtonItem key="leftBarButtonItem" id="Hgg-03-udX"/>
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
@@ -904,7 +904,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="fCk-vY-paF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="baj-8u-KvD">
                             <size key="itemSize" width="354" height="433"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -960,7 +960,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vxy-cP-I9o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3847" y="4709"/>
+            <point key="canvasLocation" x="3801" y="4709"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5Xm-lC-ZYE">
