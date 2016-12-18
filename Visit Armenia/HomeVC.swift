@@ -31,10 +31,10 @@ class HomeVC: UIViewController {
                 self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
         }
         
-        let deadlineTime = DispatchTime.now() + .seconds(5)
-        DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
-            self.imageVIew.image = UIImage(named: "Garni.jpg")
-        }
+//        let deadlineTime = DispatchTime.now() + .seconds(5)
+//        DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
+//            self.imageVIew.image = UIImage(named: "Garni.jpg")
+//        }
 
     }
     

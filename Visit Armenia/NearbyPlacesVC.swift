@@ -48,8 +48,7 @@ class NearbyPlacesVC: UIViewController {
     }
     
     @IBAction func location(_ sender: UIBarButtonItem) {
-        print(locationManager.location?.coordinate.latitude)
-        print(locationManager.location?.coordinate.longitude)
+        
     }
     
     func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage? {

@@ -133,6 +133,7 @@
 		573C62521DD8AD870038ECE4 /* Suitcase_100px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Suitcase_100px.png; sourceTree = "<group>"; };
 		573C62531DD8AD870038ECE4 /* Support_100px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Support_100px.png; sourceTree = "<group>"; };
 		573C62541DD8AD870038ECE4 /* Taxi_100px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Taxi_100px.png; sourceTree = "<group>"; };
+		577A8EF11DFB543500F35EC2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		57A85C101DDCB29400E33879 /* Idea_100px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Idea_100px.png; sourceTree = "<group>"; };
 		57D745D31DEC8D2F002B9B75 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		57E41CE61DD9F356003F6485 /* Garni.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Garni.jpg; path = AppIcon.appiconset/Garni.jpg; sourceTree = "<group>"; };
@@ -167,6 +168,7 @@
 		10F05218F5E6BE63E8E6237B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				577A8EF11DFB543500F35EC2 /* XCTest.framework */,
 				34934D254B10F747611DCE69 /* Pods_Visit_Armenia.framework */,
 			);
 			name = Frameworks;
@@ -345,7 +347,7 @@
 				TargetAttributes = {
 					573C61ED1DD739040038ECE4 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 88L62R365Q;
+						DevelopmentTeam = YAP92K26S3;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -667,9 +669,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2221B379B8981EBD9C79BCE9 /* Pods-Visit Armenia.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 88L62R365Q;
+				DEVELOPMENT_TEAM = YAP92K26S3;
 				INFOPLIST_FILE = "Visit Armenia/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -685,9 +688,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 82B8FB5DD5BB4C774D9475CE /* Pods-Visit Armenia.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 88L62R365Q;
+				DEVELOPMENT_TEAM = YAP92K26S3;
 				INFOPLIST_FILE = "Visit Armenia/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

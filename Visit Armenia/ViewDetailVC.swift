@@ -81,6 +81,7 @@ class ViewDetailVC: UICollectionViewController {
         if (index == 1) {
             if ((indexPath as NSIndexPath).row == 0){
                 cell.imageView.image = UIImage(named: "Yerevan.jpg")
+                cell.textView.isUserInteractionEnabled = false
                 cell.textView.text = "If someone wants to visit Armenia the journey should start from the heart of the country: Yerevan.  Yerevan is a city of contrasts. Yerevan is a little bright city with charming people in it. It’s hard to get bored in the city as there is so much to see, that you will be confused where to start:  here you can see Soviet style buildings next to modern ones, also some few traces of city’s ancient past remain, many museums, churches, theatres, cozy cafes and a vast variety of taverns serving national cuisine. So let’s have a look at the list of the best places of Yerevan."
             }
             

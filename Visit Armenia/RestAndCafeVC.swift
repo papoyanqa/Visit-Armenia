@@ -11,7 +11,6 @@ import GoogleMaps
 import GooglePlacePicker
 import GoogleMapsCore
 
-
 class RestAndCafeTV: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var placesTV: UITableView!
@@ -61,6 +60,24 @@ class RestAndCafeTV: UIViewController, UITableViewDelegate, UITableViewDataSourc
             }
         })
         
+        DispatchQueue.global(qos: .background).async {
+            print("This is run on the background queue")
+            
+            DispatchQueue.main.async {
+                print("This is run on the main queue, after the previous code in outer block")
+            }
+        }
+        
+        
+    }
+    
+    
+    
+    
+    @IBAction func refresh(_ sender: Any) {
+        
+        
+        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -73,16 +90,19 @@ class RestAndCafeTV: UIViewController, UITableViewDelegate, UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! RestAndCafeTVC
         let venue = venuesSearch.venues[indexPath.row]
-        
         cell.placeName.text = venue.name
+        
         Networking.getPhotoUrl(id: venue.id, completion:  { (result: String?, error: Error?) in
             let url = URL(string: result!)
             if url == nil {
-                cell.iconImage.image = UIImage(named: "Garni.jpg")
+                cell.iconImage.image = nil
             } else {
+                cell.iconImage.image = nil
                 cell.iconImage.kf.setImage(with: url)
+                
             }
         })
         
