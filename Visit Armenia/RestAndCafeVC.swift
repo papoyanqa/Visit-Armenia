@@ -102,7 +102,6 @@ class RestAndCafeTV: UIViewController, UITableViewDelegate, UITableViewDataSourc
             } else {
                 cell.iconImage.image = nil
                 cell.iconImage.kf.setImage(with: url)
-                
             }
         })
         
