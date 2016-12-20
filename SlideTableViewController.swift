@@ -14,7 +14,7 @@ class SideBarSTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableArray = ["Home", "Nearby Places", "Shopping", "Restaurants and Cafes" , "Events", "Popular Itineraries", "Taxi", "Settings", "My Trip", "About"]
+        tableArray = ["Home", "Nearby Places", "Monuments", "Shopping", "Restaurants and Cafes" , "Events", "Popular Itineraries", "Taxi", "Settings", "My Trip", "About"]
     }
     
     override func didReceiveMemoryWarning() {
@@ -51,40 +51,45 @@ class SideBarSTableViewController: UITableViewController {
         
         if ((indexPath as NSIndexPath).row == 2) {
             cell.categoryName.text = tableArray[indexPath.row]
-            cell.iconView.image = UIImage(named: "ShoppingBag_100px.png")
+            cell.iconView.image = UIImage(named: "Museum-100.png")
         }
         
         if ((indexPath as NSIndexPath).row == 3) {
             cell.categoryName.text = tableArray[indexPath.row]
-            cell.iconView.image = UIImage(named: "DiningRoom_100px.png")
+            cell.iconView.image = UIImage(named: "ShoppingBag_100px.png")
         }
         
         if ((indexPath as NSIndexPath).row == 4) {
             cell.categoryName.text = tableArray[indexPath.row]
-            cell.iconView.image = UIImage(named: "ChristmasStar_100px.png")
+            cell.iconView.image = UIImage(named: "DiningRoom_100px.png")
         }
         
         if ((indexPath as NSIndexPath).row == 5) {
             cell.categoryName.text = tableArray[indexPath.row]
-            cell.iconView.image = UIImage(named: "Idea_100px.png")
+            cell.iconView.image = UIImage(named: "ChristmasStar_100px.png")
         }
         
         if ((indexPath as NSIndexPath).row == 6) {
             cell.categoryName.text = tableArray[indexPath.row]
-            cell.iconView.image = UIImage(named: "Taxi_100px.png")
+            cell.iconView.image = UIImage(named: "Idea_100px.png")
         }
         
         if ((indexPath as NSIndexPath).row == 7) {
             cell.categoryName.text = tableArray[indexPath.row]
-            cell.iconView.image = UIImage(named: "Support_100px.png")
+            cell.iconView.image = UIImage(named: "Taxi_100px.png")
         }
         
         if ((indexPath as NSIndexPath).row == 8) {
             cell.categoryName.text = tableArray[indexPath.row]
+            cell.iconView.image = UIImage(named: "Support_100px.png")
+        }   
+        
+        if ((indexPath as NSIndexPath).row == 9) {
+            cell.categoryName.text = tableArray[indexPath.row]
             cell.iconView.image = UIImage(named: "Suitcase_100px.png")
         }
         
-        if ((indexPath as NSIndexPath).row == 9) {
+        if ((indexPath as NSIndexPath).row == 10) {
             cell.categoryName.text = tableArray[indexPath.row]
             cell.iconView.image = UIImage(named: "About_100px.png")
         }

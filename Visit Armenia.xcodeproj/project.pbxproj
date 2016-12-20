@@ -12,6 +12,8 @@
 		49A9C7EB1DE88DC20066CBBE /* ViewDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9C7EA1DE88DC20066CBBE /* ViewDetailVC.swift */; };
 		49A9C7ED1DE8D0040066CBBE /* ViewDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9C7EC1DE8D0040066CBBE /* ViewDetailsCell.swift */; };
 		49A9C7EF1DE983D00066CBBE /* Garni_Temple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49A9C7EE1DE983D00066CBBE /* Garni_Temple.jpg */; };
+		572F699E1E0951BA00CD819B /* Museum-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 572F699D1E0951BA00CD819B /* Museum-100.png */; };
+		572F69A01E09714D00CD819B /* MonumentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572F699F1E09714D00CD819B /* MonumentsVC.swift */; };
 		573C61F21DD739040038ECE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573C61F11DD739040038ECE4 /* AppDelegate.swift */; };
 		573C61F41DD739040038ECE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573C61F31DD739040038ECE4 /* ViewController.swift */; };
 		573C61F71DD739050038ECE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 573C61F51DD739050038ECE4 /* Main.storyboard */; };
@@ -83,6 +85,8 @@
 		49A9C7EA1DE88DC20066CBBE /* ViewDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDetailVC.swift; sourceTree = "<group>"; };
 		49A9C7EC1DE8D0040066CBBE /* ViewDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDetailsCell.swift; sourceTree = "<group>"; };
 		49A9C7EE1DE983D00066CBBE /* Garni_Temple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Garni_Temple.jpg; path = "Design elements/TimeLine non active/Source/Garni_Temple.jpg"; sourceTree = SOURCE_ROOT; };
+		572F699D1E0951BA00CD819B /* Museum-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Museum-100.png"; path = "../../../Downloads/Museum-100.png"; sourceTree = "<group>"; };
+		572F699F1E09714D00CD819B /* MonumentsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonumentsVC.swift; sourceTree = "<group>"; };
 		573C61EE1DD739040038ECE4 /* Visit Armenia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Visit Armenia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		573C61F11DD739040038ECE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		573C61F31DD739040038ECE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -237,6 +241,7 @@
 				57E9ADBF1DEDC06300D211FC /* RestAndCafeTVC.swift */,
 				57E9ADC11DEF1A4600D211FC /* MapViewController.swift */,
 				574C6DDE1DEF7A60000BD20E /* Networking */,
+				572F699F1E09714D00CD819B /* MonumentsVC.swift */,
 			);
 			path = "Visit Armenia";
 			sourceTree = "<group>";
@@ -288,6 +293,7 @@
 				573C624A1DD8AD870038ECE4 /* About_100px.png */,
 				573C624B1DD8AD870038ECE4 /* ChristmasStar_100px.png */,
 				573C624C1DD8AD870038ECE4 /* DiningRoom_100px.png */,
+				572F699D1E0951BA00CD819B /* Museum-100.png */,
 				573C624D1DD8AD870038ECE4 /* Home_100px_1.png */,
 				573C624F1DD8AD870038ECE4 /* Marker_100px.png */,
 				573C62501DD8AD870038ECE4 /* Menu_100px_1.png */,
@@ -396,6 +402,7 @@
 				573C62341DD89E540038ECE4 /* Icon-App-60x60@3x.png in Resources */,
 				573C623A1DD8A0F30038ECE4 /* MainPageBackgroun_opera.png in Resources */,
 				573C62571DD8AD870038ECE4 /* DiningRoom_100px.png in Resources */,
+				572F699E1E0951BA00CD819B /* Museum-100.png in Resources */,
 				573C62381DD89E540038ECE4 /* Icon-App-83.5x83.5@2x.png in Resources */,
 				57A85C111DDCB29400E33879 /* Idea_100px.png in Resources */,
 				573C62131DD89DDB0038ECE4 /* First Loading Splashscreen.png in Resources */,
@@ -544,6 +551,7 @@
 				573C62421DD8A9A70038ECE4 /* TaxiVC.swift in Sources */,
 				57E9ADBA1DECAEE100D211FC /* PhotoModel.swift in Sources */,
 				573C62401DD8A9820038ECE4 /* PopularItinerariesVC.swift in Sources */,
+				572F69A01E09714D00CD819B /* MonumentsVC.swift in Sources */,
 				57E9ADC21DEF1A4600D211FC /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

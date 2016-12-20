@@ -167,8 +167,42 @@
                                     <segue destination="02u-bh-Iax" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="13T-Mx-8RJ"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Shopping" id="3HP-bg-lNE" customClass="SlideTableViewCell" customModule="Visit_Armenia" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Monuments" id="AyX-SC-rXi" userLabel="Monuments" customClass="SlideTableViewCell" customModule="Visit_Armenia" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="116" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AyX-SC-rXi" id="j5r-GG-lU7">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hp2-8f-fyD">
+                                            <rect key="frame" x="91" y="11" width="200" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aeY-vJ-eP7" userLabel="iconView">
+                                            <rect key="frame" x="30" y="5" width="30" height="30"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="aeY-vJ-eP7" secondAttribute="bottom" constant="8" id="1Bn-2u-WpY"/>
+                                        <constraint firstAttribute="trailing" secondItem="Hp2-8f-fyD" secondAttribute="trailing" constant="84" id="Abn-0r-CaH"/>
+                                        <constraint firstItem="aeY-vJ-eP7" firstAttribute="leading" secondItem="j5r-GG-lU7" secondAttribute="leading" constant="30" id="Cy2-TM-4mf"/>
+                                        <constraint firstItem="Hp2-8f-fyD" firstAttribute="top" secondItem="j5r-GG-lU7" secondAttribute="top" constant="11" id="Q75-d8-Qlz"/>
+                                        <constraint firstItem="Hp2-8f-fyD" firstAttribute="leading" secondItem="aeY-vJ-eP7" secondAttribute="trailing" constant="31" id="Y6L-zO-JMY"/>
+                                        <constraint firstAttribute="bottom" secondItem="Hp2-8f-fyD" secondAttribute="bottom" constant="11" id="g25-hj-fjk"/>
+                                        <constraint firstItem="aeY-vJ-eP7" firstAttribute="top" secondItem="j5r-GG-lU7" secondAttribute="top" constant="5" id="p4N-17-3uw"/>
+                                        <constraint firstAttribute="trailing" secondItem="aeY-vJ-eP7" secondAttribute="trailing" constant="315" id="v8S-Jh-sga"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="categoryName" destination="Hp2-8f-fyD" id="g2O-T5-Wv2"/>
+                                    <outlet property="iconView" destination="aeY-vJ-eP7" id="7jx-RN-Ip6"/>
+                                    <segue destination="GSW-F5-h1N" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="X64-rT-q92"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Shopping" id="3HP-bg-lNE" customClass="SlideTableViewCell" customModule="Visit_Armenia" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="160" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3HP-bg-lNE" id="Phf-4U-rMf">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
@@ -198,11 +232,11 @@
                                 <connections>
                                     <outlet property="categoryName" destination="u3K-LD-hXF" id="6kB-Hp-Ujf"/>
                                     <outlet property="iconView" destination="Ss0-GE-hK9" id="1H5-tG-IDB"/>
-                                    <segue destination="DPU-cm-Vp7" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="igR-KD-Bq0"/>
+                                    <segue destination="DPU-cm-Vp7" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="6Eq-wS-fpI"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Restaurants and Cafes" id="1Yg-Ey-b31" customClass="SlideTableViewCell" customModule="Visit_Armenia" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="160" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="204" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Yg-Ey-b31" id="LE1-tt-UIM">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
@@ -232,11 +266,11 @@
                                 <connections>
                                     <outlet property="categoryName" destination="vDu-cf-sA7" id="qCQ-4o-brz"/>
                                     <outlet property="iconView" destination="b21-NP-P4z" id="V7a-3m-Gzj"/>
-                                    <segue destination="BL3-Gv-eoR" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="94u-2c-dot"/>
+                                    <segue destination="BL3-Gv-eoR" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="9RX-AV-VoH"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Events" id="ieq-8x-KX2" customClass="SlideTableViewCell" customModule="Visit_Armenia" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="204" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="248" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ieq-8x-KX2" id="Ze5-jz-SkB">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
@@ -266,11 +300,11 @@
                                 <connections>
                                     <outlet property="categoryName" destination="5mc-pG-Pf2" id="wmh-NV-SqJ"/>
                                     <outlet property="iconView" destination="4MS-0X-Auj" id="VH2-tn-5yt"/>
-                                    <segue destination="AQt-Ke-kVT" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="5x1-df-2FV"/>
+                                    <segue destination="AQt-Ke-kVT" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="3dU-Oz-tRp"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Popular Itineraries" id="z98-gr-YSQ" customClass="SlideTableViewCell" customModule="Visit_Armenia" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="292" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z98-gr-YSQ" id="rNR-Sn-pOa">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
@@ -300,11 +334,11 @@
                                 <connections>
                                     <outlet property="categoryName" destination="xjo-n2-az2" id="cHB-xZ-dmJ"/>
                                     <outlet property="iconView" destination="HGD-Qj-NCR" id="wvq-T1-SyZ"/>
-                                    <segue destination="NNp-cl-v6r" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="h6e-Ly-goJ"/>
+                                    <segue destination="NNp-cl-v6r" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="6E8-02-jaP"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Taxi" id="Tmc-Wm-U6V" customClass="SlideTableViewCell" customModule="Visit_Armenia" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="292" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="336" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tmc-Wm-U6V" id="gF0-VK-oev">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
@@ -334,11 +368,11 @@
                                 <connections>
                                     <outlet property="categoryName" destination="lBS-n5-q5R" id="z9L-Mc-hKj"/>
                                     <outlet property="iconView" destination="eDu-5x-Uwk" id="qrP-Vg-Ggd"/>
-                                    <segue destination="b0y-wX-TdD" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="JKG-YB-jS1"/>
+                                    <segue destination="b0y-wX-TdD" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="cex-t0-Kp9"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Settings" id="oJy-hG-PgM" customClass="SlideTableViewCell" customModule="Visit_Armenia" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="336" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="380" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oJy-hG-PgM" id="XlP-Pz-a63">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
@@ -368,11 +402,11 @@
                                 <connections>
                                     <outlet property="categoryName" destination="sjv-01-pAw" id="OgC-ec-SVr"/>
                                     <outlet property="iconView" destination="SNM-vd-VSW" id="Auz-Fl-V2E"/>
-                                    <segue destination="wIk-pk-QFZ" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="FHs-fq-Ptq"/>
+                                    <segue destination="wIk-pk-QFZ" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Umm-L2-9za"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="My Trip" id="QNM-FA-m4f" customClass="SlideTableViewCell" customModule="Visit_Armenia" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="380" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="424" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QNM-FA-m4f" id="Uji-Bc-JZi">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
@@ -402,11 +436,11 @@
                                 <connections>
                                     <outlet property="categoryName" destination="ThT-vc-rQb" id="JUw-9s-lhy"/>
                                     <outlet property="iconView" destination="WJD-VS-LPD" id="RQk-9l-QV0"/>
-                                    <segue destination="ewi-qv-o8r" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="aSa-YI-dfT"/>
+                                    <segue destination="ewi-qv-o8r" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="z8G-1e-xZ0"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="About" id="dgt-0y-z3H" customClass="SlideTableViewCell" customModule="Visit_Armenia" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="424" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="468" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dgt-0y-z3H" id="jaj-bC-73m">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
@@ -436,7 +470,6 @@
                                 <connections>
                                     <outlet property="categoryName" destination="qGW-qf-cdo" id="QPT-J8-jVa"/>
                                     <outlet property="iconView" destination="kcG-Bt-Ddr" id="z5X-Bm-jYi"/>
-                                    <segue destination="e9o-xy-Qyd" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="ehz-dQ-Wcp"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -507,7 +540,62 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tzv-Ex-4B3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3964" y="428"/>
+            <point key="canvasLocation" x="4766" y="-260"/>
+        </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="3aQ-Xt-qyT">
+            <objects>
+                <collectionViewController id="9Ig-5D-NdN" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="1mI-eC-vDi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0o3-yr-Www">
+                            <size key="itemSize" width="335" height="580"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="9U9-5E-xDb">
+                                <rect key="frame" x="20" y="10" width="335" height="580"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="335" height="580"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cA2-hg-AM2">
+                                            <rect key="frame" x="0.0" y="8" width="335" height="433"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0oD-EL-E82">
+                                            <rect key="frame" x="18" y="362" width="134" height="67"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04H-Nx-BgC">
+                                            <rect key="frame" x="8" y="478" width="134" height="67"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="9Ig-5D-NdN" id="qkv-dg-XQG"/>
+                            <outlet property="delegate" destination="9Ig-5D-NdN" id="voI-qi-JkP"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="FyL-Me-nuf"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lUf-ci-B5E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7162.3999999999996" y="-222.63868065967017"/>
         </scene>
         <!--Rest And CafeTV-->
         <scene sceneID="iqK-3H-Pu8">
@@ -1207,6 +1295,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ntc-ng-Sxv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3097" y="428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gWb-DK-Mbx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M6E-pt-vI9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="H7z-zb-f9g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9Ig-5D-NdN" kind="relationship" relationship="rootViewController" id="jFV-Nz-W7E"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NXf-O6-XeS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6223.1999999999998" y="-222.63868065967017"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

@@ -17,7 +17,8 @@ class ViewDetailVC: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionIndex = ["1","2"]
-        
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
+
         if index == 1 {
             
         }
