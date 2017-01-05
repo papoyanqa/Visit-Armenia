@@ -12,7 +12,13 @@
 		49A9C7EB1DE88DC20066CBBE /* ViewDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9C7EA1DE88DC20066CBBE /* ViewDetailVC.swift */; };
 		49A9C7ED1DE8D0040066CBBE /* ViewDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9C7EC1DE8D0040066CBBE /* ViewDetailsCell.swift */; };
 		49A9C7EF1DE983D00066CBBE /* Garni_Temple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49A9C7EE1DE983D00066CBBE /* Garni_Temple.jpg */; };
-		572F699E1E0951BA00CD819B /* Museum-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 572F699D1E0951BA00CD819B /* Museum-100.png */; };
+		570D71BB1E097A2E00E310F2 /* Museum-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 570D71BA1E097A2E00E310F2 /* Museum-100.png */; };
+		570D71BD1E097C4300E310F2 /* MonumentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570D71BC1E097C4300E310F2 /* MonumentCell.swift */; };
+		570D71C11E09CBC600E310F2 /* mother.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 570D71C01E09CBC600E310F2 /* mother.jpg */; };
+		570D71C31E09CBDE00E310F2 /* geghard.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 570D71C21E09CBDE00E310F2 /* geghard.jpg */; };
+		570D71C51E09CD3A00E310F2 /* echmiadzin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 570D71C41E09CD3A00E310F2 /* echmiadzin.jpg */; };
+		570D71C91E09D27D00E310F2 /* sargis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 570D71C81E09D27D00E310F2 /* sargis.jpg */; };
+		570D71CB1E09D65D00E310F2 /* gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 570D71CA1E09D65D00E310F2 /* gradient.png */; };
 		572F69A01E09714D00CD819B /* MonumentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572F699F1E09714D00CD819B /* MonumentsVC.swift */; };
 		573C61F21DD739040038ECE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573C61F11DD739040038ECE4 /* AppDelegate.swift */; };
 		573C61F41DD739040038ECE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573C61F31DD739040038ECE4 /* ViewController.swift */; };
@@ -85,7 +91,13 @@
 		49A9C7EA1DE88DC20066CBBE /* ViewDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDetailVC.swift; sourceTree = "<group>"; };
 		49A9C7EC1DE8D0040066CBBE /* ViewDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDetailsCell.swift; sourceTree = "<group>"; };
 		49A9C7EE1DE983D00066CBBE /* Garni_Temple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Garni_Temple.jpg; path = "Design elements/TimeLine non active/Source/Garni_Temple.jpg"; sourceTree = SOURCE_ROOT; };
-		572F699D1E0951BA00CD819B /* Museum-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Museum-100.png"; path = "../../../Downloads/Museum-100.png"; sourceTree = "<group>"; };
+		570D71BA1E097A2E00E310F2 /* Museum-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Museum-100.png"; path = "Design elements/Icons 2/Museum-100.png"; sourceTree = SOURCE_ROOT; };
+		570D71BC1E097C4300E310F2 /* MonumentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonumentCell.swift; sourceTree = "<group>"; };
+		570D71C01E09CBC600E310F2 /* mother.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mother.jpg; path = "Design elements/mother.jpg"; sourceTree = SOURCE_ROOT; };
+		570D71C21E09CBDE00E310F2 /* geghard.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = geghard.jpg; path = "Design elements/geghard.jpg"; sourceTree = SOURCE_ROOT; };
+		570D71C41E09CD3A00E310F2 /* echmiadzin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = echmiadzin.jpg; path = "Design elements/echmiadzin.jpg"; sourceTree = SOURCE_ROOT; };
+		570D71C81E09D27D00E310F2 /* sargis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sargis.jpg; path = "Design elements/sargis.jpg"; sourceTree = SOURCE_ROOT; };
+		570D71CA1E09D65D00E310F2 /* gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gradient.png; path = "Design elements/gradient.png"; sourceTree = SOURCE_ROOT; };
 		572F699F1E09714D00CD819B /* MonumentsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonumentsVC.swift; sourceTree = "<group>"; };
 		573C61EE1DD739040038ECE4 /* Visit Armenia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Visit Armenia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		573C61F11DD739040038ECE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -242,6 +254,7 @@
 				57E9ADC11DEF1A4600D211FC /* MapViewController.swift */,
 				574C6DDE1DEF7A60000BD20E /* Networking */,
 				572F699F1E09714D00CD819B /* MonumentsVC.swift */,
+				570D71BC1E097C4300E310F2 /* MonumentCell.swift */,
 			);
 			path = "Visit Armenia";
 			sourceTree = "<group>";
@@ -250,10 +263,15 @@
 			isa = PBXGroup;
 			children = (
 				57E41CE61DD9F356003F6485 /* Garni.jpg */,
+				570D71CA1E09D65D00E310F2 /* gradient.png */,
 				49A9C7EE1DE983D00066CBBE /* Garni_Temple.jpg */,
 				57E41CE71DD9F356003F6485 /* Yerevan.jpg */,
 				57A85C101DDCB29400E33879 /* Idea_100px.png */,
+				570D71C41E09CD3A00E310F2 /* echmiadzin.jpg */,
 				57E41CE81DD9F356003F6485 /* tatev_monastery.jpg */,
+				570D71C81E09D27D00E310F2 /* sargis.jpg */,
+				570D71C21E09CBDE00E310F2 /* geghard.jpg */,
+				570D71C01E09CBC600E310F2 /* mother.jpg */,
 				573C62491DD8AD870038ECE4 /* Icons 2 */,
 				573C62141DD89E540038ECE4 /* AppIcon.appiconset */,
 				573C62121DD89DDB0038ECE4 /* First Loading Splashscreen.png */,
@@ -293,9 +311,9 @@
 				573C624A1DD8AD870038ECE4 /* About_100px.png */,
 				573C624B1DD8AD870038ECE4 /* ChristmasStar_100px.png */,
 				573C624C1DD8AD870038ECE4 /* DiningRoom_100px.png */,
-				572F699D1E0951BA00CD819B /* Museum-100.png */,
 				573C624D1DD8AD870038ECE4 /* Home_100px_1.png */,
 				573C624F1DD8AD870038ECE4 /* Marker_100px.png */,
+				570D71BA1E097A2E00E310F2 /* Museum-100.png */,
 				573C62501DD8AD870038ECE4 /* Menu_100px_1.png */,
 				573C62511DD8AD870038ECE4 /* ShoppingBag_100px.png */,
 				573C62521DD8AD870038ECE4 /* Suitcase_100px.png */,
@@ -382,7 +400,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				570D71C31E09CBDE00E310F2 /* geghard.jpg in Resources */,
+				570D71CB1E09D65D00E310F2 /* gradient.png in Resources */,
 				573C622C1DD89E540038ECE4 /* Icon-App-29x29@2x.png in Resources */,
+				570D71C91E09D27D00E310F2 /* sargis.jpg in Resources */,
 				573C625F1DD8AD870038ECE4 /* Taxi_100px.png in Resources */,
 				573C625E1DD8AD870038ECE4 /* Support_100px.png in Resources */,
 				573C62271DD89E540038ECE4 /* Contents.json in Resources */,
@@ -390,6 +411,7 @@
 				573C62311DD89E540038ECE4 /* Icon-App-57x57@1x.png in Resources */,
 				49A9C7EF1DE983D00066CBBE /* Garni_Temple.jpg in Resources */,
 				573C625A1DD8AD870038ECE4 /* Marker_100px.png in Resources */,
+				570D71C51E09CD3A00E310F2 /* echmiadzin.jpg in Resources */,
 				573C62291DD89E540038ECE4 /* Icon-App-20x20@2x.png in Resources */,
 				573C61FC1DD739050038ECE4 /* LaunchScreen.storyboard in Resources */,
 				573C62581DD8AD870038ECE4 /* Home_100px_1.png in Resources */,
@@ -402,13 +424,14 @@
 				573C62341DD89E540038ECE4 /* Icon-App-60x60@3x.png in Resources */,
 				573C623A1DD8A0F30038ECE4 /* MainPageBackgroun_opera.png in Resources */,
 				573C62571DD8AD870038ECE4 /* DiningRoom_100px.png in Resources */,
-				572F699E1E0951BA00CD819B /* Museum-100.png in Resources */,
+				570D71BB1E097A2E00E310F2 /* Museum-100.png in Resources */,
 				573C62381DD89E540038ECE4 /* Icon-App-83.5x83.5@2x.png in Resources */,
 				57A85C111DDCB29400E33879 /* Idea_100px.png in Resources */,
 				573C62131DD89DDB0038ECE4 /* First Loading Splashscreen.png in Resources */,
 				573C62371DD89E540038ECE4 /* Icon-App-76x76@3x.png in Resources */,
 				57E41CEB1DD9F356003F6485 /* tatev_monastery.jpg in Resources */,
 				573C62321DD89E540038ECE4 /* Icon-App-60x60@1x.png in Resources */,
+				570D71C11E09CBC600E310F2 /* mother.jpg in Resources */,
 				573C62361DD89E540038ECE4 /* Icon-App-76x76@2x.png in Resources */,
 				573C62351DD89E540038ECE4 /* Icon-App-76x76@1x.png in Resources */,
 				573C61F71DD739050038ECE4 /* Main.storyboard in Resources */,
@@ -526,6 +549,7 @@
 			files = (
 				573C62441DD8A9CA0038ECE4 /* SettingsVC.swift in Sources */,
 				573C620C1DD895CA0038ECE4 /* ShoppingVC.swift in Sources */,
+				570D71BD1E097C4300E310F2 /* MonumentCell.swift in Sources */,
 				57E9ADB61DECA6D900D211FC /* RestaurantsAndCafesTVC.swift in Sources */,
 				57E9ADBE1DEDBF5100D211FC /* RestAndCafeVC.swift in Sources */,
 				573C623E1DD8A94D0038ECE4 /* EventsVC.swift in Sources */,

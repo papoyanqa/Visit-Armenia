@@ -89,22 +89,28 @@ class RestAndCafeTV: UIViewController, UITableViewDelegate, UITableViewDataSourc
         return venuesSearch != nil ? venuesSearch.venues.count : 0
     }
     
+    
+    var urlMap:[String:String] = [:]
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! RestAndCafeTVC
         let venue = venuesSearch.venues[indexPath.row]
-        cell.placeName.text = venue.name
-        
-        Networking.getPhotoUrl(id: venue.id, completion:  { (result: String?, error: Error?) in
+        let setBlock: (String?, Error?) -> Void = {
+            (result: String?, error: Error?) in
             let url = URL(string: result!)
             if url == nil {
                 cell.iconImage.image = nil
             } else {
-                cell.iconImage.image = nil
-                cell.iconImage.kf.setImage(with: url)
+                cell.iconImage.kf.setImage(with: url, placeholder: UIImage(named: "x"), options: [.backgroundDecode], progressBlock: nil, completionHandler: nil)
             }
-        })
+        }
         
+        if let url = urlMap[venue.id] {
+            setBlock(url, nil)
+        } else {
+            Networking.getPhotoUrl(id: venue.id, completion:  setBlock)
+        }
         return cell
     }
     
