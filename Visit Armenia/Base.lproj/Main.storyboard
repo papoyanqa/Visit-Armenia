@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -46,7 +46,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ljJ-av-boE">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ljJ-av-boE">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did You Know?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pz3-ka-d2l">
@@ -373,7 +373,7 @@
                                     <segue destination="b0y-wX-TdD" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="cex-t0-Kp9"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Settings" id="oJy-hG-PgM" customClass="SlideTableViewCell" customModule="Visit_Armenia" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="My Trip" id="oJy-hG-PgM" customClass="SlideTableViewCell" customModule="Visit_Armenia" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="380" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oJy-hG-PgM" id="XlP-Pz-a63">
@@ -404,10 +404,10 @@
                                 <connections>
                                     <outlet property="categoryName" destination="sjv-01-pAw" id="OgC-ec-SVr"/>
                                     <outlet property="iconView" destination="SNM-vd-VSW" id="Auz-Fl-V2E"/>
-                                    <segue destination="wIk-pk-QFZ" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Umm-L2-9za"/>
+                                    <segue destination="ewi-qv-o8r" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="cuX-T7-xDj"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="My Trip" id="QNM-FA-m4f" customClass="SlideTableViewCell" customModule="Visit_Armenia" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Settings" id="QNM-FA-m4f" customClass="SlideTableViewCell" customModule="Visit_Armenia" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="424" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QNM-FA-m4f" id="Uji-Bc-JZi">
@@ -438,7 +438,7 @@
                                 <connections>
                                     <outlet property="categoryName" destination="ThT-vc-rQb" id="JUw-9s-lhy"/>
                                     <outlet property="iconView" destination="WJD-VS-LPD" id="RQk-9l-QV0"/>
-                                    <segue destination="ewi-qv-o8r" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="z8G-1e-xZ0"/>
+                                    <segue destination="wIk-pk-QFZ" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="wZH-pr-V1z"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="About" id="dgt-0y-z3H" customClass="SlideTableViewCell" customModule="Visit_Armenia" customModuleProvider="target">
@@ -502,14 +502,8 @@
                         <barButtonItem key="leftBarButtonItem" title="Item" id="Oyw-4I-vmL">
                             <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="chu-gi-IOk">
-                            <connections>
-                                <action selector="location:" destination="8Re-YL-LIz" id="rug-JK-lLv"/>
-                            </connections>
-                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="location" destination="chu-gi-IOk" id="x61-eY-ths"/>
                         <outlet property="slideMenu" destination="Oyw-4I-vmL" id="4CN-tN-VDM"/>
                     </connections>
                 </viewController>
@@ -521,7 +515,7 @@
         <scene sceneID="3aQ-Xt-qyT">
             <objects>
                 <collectionViewController id="9Ig-5D-NdN" customClass="MonumentsVC" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" pagingEnabled="YES" dataMode="prototypes" id="1mI-eC-vDi">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" id="1mI-eC-vDi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -651,35 +645,24 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Xf-hZ-LPB">
                                                     <rect key="frame" x="8" y="8" width="86" height="86"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="86" id="9BN-m5-fc8"/>
+                                                        <constraint firstAttribute="width" secondItem="5Xf-hZ-LPB" secondAttribute="height" multiplier="1:1" id="f6w-s2-dZJ"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{ place : name }" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAG-k9-VYH">
-                                                    <rect key="frame" x="115" y="32" width="239" height="20"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAG-k9-VYH">
+                                                    <rect key="frame" x="126" y="41" width="227" height="20"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQN-XI-Gvr">
-                                                    <rect key="frame" x="305" y="60" width="49" height="30"/>
-                                                    <state key="normal" title="more &gt;">
-                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </state>
-                                                    <connections>
-                                                        <segue destination="Vyi-dx-ujP" kind="show" id="kDM-f6-tQh"/>
-                                                    </connections>
-                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="5Xf-hZ-LPB" firstAttribute="top" secondItem="Weo-FH-O3Y" secondAttribute="top" constant="8" id="7tg-AO-CYI"/>
-                                                <constraint firstAttribute="bottom" secondItem="5Xf-hZ-LPB" secondAttribute="bottom" constant="7.5" id="Emv-xs-XGX"/>
-                                                <constraint firstItem="WAG-k9-VYH" firstAttribute="leading" secondItem="5Xf-hZ-LPB" secondAttribute="trailing" constant="21" id="FSq-Kp-s8G"/>
-                                                <constraint firstItem="WAG-k9-VYH" firstAttribute="trailing" secondItem="Weo-FH-O3Y" secondAttribute="trailingMargin" constant="-13" id="NIF-Bw-ixg"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="WAG-k9-VYH" secondAttribute="bottom" constant="41.5" id="PxR-Hd-0g9"/>
-                                                <constraint firstItem="5Xf-hZ-LPB" firstAttribute="leading" secondItem="Weo-FH-O3Y" secondAttribute="leading" constant="8" id="Vq6-GB-lMX"/>
-                                                <constraint firstItem="dQN-XI-Gvr" firstAttribute="top" secondItem="WAG-k9-VYH" secondAttribute="bottom" constant="8" id="kVe-kB-R59"/>
-                                                <constraint firstItem="WAG-k9-VYH" firstAttribute="top" secondItem="Weo-FH-O3Y" secondAttribute="top" constant="31.5" id="o6M-YD-nMa"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="dQN-XI-Gvr" secondAttribute="trailing" constant="13" id="wuL-ya-1Zj"/>
+                                                <constraint firstAttribute="bottom" secondItem="5Xf-hZ-LPB" secondAttribute="bottom" constant="7" id="Cfg-OL-0hP"/>
+                                                <constraint firstItem="WAG-k9-VYH" firstAttribute="trailing" secondItem="Weo-FH-O3Y" secondAttribute="trailingMargin" constant="-14" id="NIF-Bw-ixg"/>
+                                                <constraint firstItem="WAG-k9-VYH" firstAttribute="leading" secondItem="5Xf-hZ-LPB" secondAttribute="trailing" constant="32" id="Pfz-6D-1VV"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="WAG-k9-VYH" secondAttribute="bottom" constant="32" id="PxR-Hd-0g9"/>
+                                                <constraint firstItem="5Xf-hZ-LPB" firstAttribute="leading" secondItem="Weo-FH-O3Y" secondAttribute="leading" constant="8" id="fJg-hL-ZIc"/>
+                                                <constraint firstItem="WAG-k9-VYH" firstAttribute="top" secondItem="Weo-FH-O3Y" secondAttribute="top" constant="41" id="o6M-YD-nMa"/>
+                                                <constraint firstItem="5Xf-hZ-LPB" firstAttribute="top" secondItem="Weo-FH-O3Y" secondAttribute="top" constant="8" id="sQk-2M-r4W"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
@@ -722,25 +705,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ASr-um-GVr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3092" y="1170"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="0rL-A4-qeG">
-            <objects>
-                <viewController id="Vyi-dx-ujP" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="QLg-Aw-3be"/>
-                        <viewControllerLayoutGuide type="bottom" id="fmg-7t-8rz"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="lla-Lx-VVG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="R4l-4r-IMP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3964" y="1170"/>
+            <point key="canvasLocation" x="3092" y="1169.865067466267"/>
         </scene>
         <!--EventsVC-->
         <scene sceneID="u5D-VL-wAz">
@@ -795,11 +760,21 @@
                     <view key="view" contentMode="scaleToFill" id="P8o-d4-bb0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8z-57-end">
+                                <rect key="frame" x="102" y="161" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="GG"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="IDp-p0-olc">
                         <barButtonItem key="leftBarButtonItem" title="Item" id="2Yy-w1-lBR"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="slideMenu" destination="2Yy-w1-lBR" id="2TD-EZ-LcZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kin-dk-Yfb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -816,11 +791,30 @@
                     <view key="view" contentMode="scaleToFill" id="ZL7-y2-c2R">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4r2-9V-1ee">
+                                <rect key="frame" x="164" y="179" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="callPolice:" destination="WCI-QV-Cvi" eventType="touchUpInside" id="hs7-1A-pTg"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4r2-9V-1ee" firstAttribute="leading" secondItem="ZL7-y2-c2R" secondAttribute="leading" constant="164" id="5T2-D5-Eth"/>
+                            <constraint firstItem="4r2-9V-1ee" firstAttribute="top" secondItem="rwr-9c-IJE" secondAttribute="bottom" constant="115" id="TJ8-Ri-cg5"/>
+                            <constraint firstAttribute="trailing" secondItem="4r2-9V-1ee" secondAttribute="trailing" constant="165" id="h2R-Mn-0g0"/>
+                            <constraint firstItem="qGT-sv-13m" firstAttribute="top" secondItem="4r2-9V-1ee" secondAttribute="bottom" constant="458" id="hYX-Fg-fcF"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wmU-cN-KtT">
                         <barButtonItem key="leftBarButtonItem" title="Item" id="fQ7-fg-ieV"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="callPolice" destination="4r2-9V-1ee" id="2AR-kO-CdP"/>
+                        <outlet property="slideMenu" destination="fQ7-fg-ieV" id="ElH-WG-f7s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qhY-nH-VbI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -830,7 +824,7 @@
         <scene sceneID="OBX-dI-Iel">
             <objects>
                 <collectionViewController id="K2s-qJ-p31" customClass="MyTripCollectionVC" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" dataMode="prototypes" id="ZfN-LE-QX5">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="prototypes" id="ZfN-LE-QX5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.9370916485786438" green="0.93694382905960083" blue="0.95754462480545044" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -926,7 +920,7 @@
         <scene sceneID="ar6-L3-4a8">
             <objects>
                 <collectionViewController storyboardIdentifier="detailVC" id="NpZ-0o-AQw" customClass="ViewDetailVC" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" scrollEnabled="NO" dataMode="prototypes" id="fCk-vY-paF">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" scrollEnabled="NO" dataMode="prototypes" id="fCk-vY-paF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1048,7 +1042,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pgx-Dy-ZcF" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Cga-aO-jeu">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cga-aO-jeu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1066,7 +1060,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="02u-bh-Iax" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="cft-Nc-CNz">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cft-Nc-CNz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1084,7 +1078,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DPU-cm-Vp7" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6kT-Ma-q43">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6kT-Ma-q43">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1102,7 +1096,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ewi-qv-o8r" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="pz0-Cv-hLS">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pz0-Cv-hLS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1120,7 +1114,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BL3-Gv-eoR" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="fe9-Fb-vIi">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fe9-Fb-vIi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1138,7 +1132,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AQt-Ke-kVT" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="bdp-4z-6dP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bdp-4z-6dP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1156,7 +1150,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NNp-cl-v6r" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="dcx-pD-PtV">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dcx-pD-PtV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1174,7 +1168,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b0y-wX-TdD" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="rxn-9E-thF">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rxn-9E-thF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1192,7 +1186,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wIk-pk-QFZ" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="qbr-cv-tnh">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qbr-cv-tnh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1210,7 +1204,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e9o-xy-Qyd" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NKH-5J-Zrp">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NKH-5J-Zrp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1322,7 +1316,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="V5J-BZ-cjD" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="MJD-6x-BAC">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MJD-6x-BAC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

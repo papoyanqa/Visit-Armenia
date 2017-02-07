@@ -95,22 +95,17 @@ class RestAndCafeTV: UIViewController, UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! RestAndCafeTVC
-        let venue = venuesSearch.venues[indexPath.row]
-        let setBlock: (String?, Error?) -> Void = {
-            (result: String?, error: Error?) in
-            let url = URL(string: result!)
-            if url == nil {
-                cell.iconImage.image = nil
-            } else {
-                cell.iconImage.kf.setImage(with: url, placeholder: UIImage(named: "x"), options: [.backgroundDecode], progressBlock: nil, completionHandler: nil)
-            }
-        }
         
-        if let url = urlMap[venue.id] {
-            setBlock(url, nil)
-        } else {
-            Networking.getPhotoUrl(id: venue.id, completion:  setBlock)
-        }
+        let venue = venuesSearch.venues[indexPath.row]
+        
+        cell.placeName.text = venue.name
+        Networking.getPhotoUrl(id: venue.id, completion:  { (result: String?, error: Error?) in
+            let url = URL(string: result!)
+            
+            cell.iconImage.kf.setImage(with: url)
+            
+        })
+        
         return cell
     }
     
@@ -134,6 +129,7 @@ class RestAndCafeTV: UIViewController, UITableViewDelegate, UITableViewDataSourc
                     let venue = self.venuesSearch.venues[indexPath.row]
                     mapVC.latitude = venue.lat
                     mapVC.longitude = venue.lng
+                    mapVC.viewDidLoad();
                 }
             })
             

@@ -92,7 +92,7 @@ class RestaurantsAndCafesTVC: UITableViewController {
         Networking.getPhotoUrl(id: venue.id, completion:  { (result: String?, error: Error?) in
             let url = URL(string: result!)
             if url == URL(string: "test") {
-                cell.iconImage.image = UIImage(named: "Garni.jpg")
+//                cell.iconImage.image = UIImage(named: "Garni.jpg")
             }
             cell.iconImage.kf.setImage(with: url)
         })

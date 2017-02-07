@@ -9,9 +9,27 @@
 import UIKit
 
 class TaxiVC: UIViewController {
+    @IBOutlet weak var slideMenu: UIBarButtonItem!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        var image: UIImage!
+        var newImage: UIImage!
+        image = UIImage(named: "Menu_100px_1.png")
+        newImage = resizeImage(image: image, newWidth: 25)
+        slideMenu.image = newImage
+        slideMenu.accessibilityFrame = CGRect(x: 0, y: 0, width: 50, height: 50)
+        slideMenu.imageInsets = UIEdgeInsetsMake(0, 0, 0, 0)
+        slideMenu.title = nil
+        slideMenu.tintColor = UIColor.black
+        
+        if revealViewController() != nil {
+            slideMenu.target = self.revealViewController()
+            slideMenu.action = #selector(SWRevealViewController.revealToggle(_:))
+            self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
+        }
+
+        
         self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
         navigationController?.navigationBar.barTintColor = UIColor.clear
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)

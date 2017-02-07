@@ -31,12 +31,51 @@ class HomeVC: UIViewController {
                 self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
         }
         
-//        let deadlineTime = DispatchTime.now() + .seconds(5)
-//        DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
-//            self.imageVIew.image = UIImage(named: "Garni.jpg")
-//        }
+        let deadlineTime = DispatchTime.now() + .seconds(4)
+        DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
+//            UIView.animate(withDuration: 3, animations: {
+//                self.imageVIew.alpha = 1
+//                self.imageVIew.alpha = 0
+//            })
+//            
+//            
+//            UIView.animate(withDuration: 1.5, animations: {
+//                self.imageVIew.alpha = 1
+//                self.imageVIew.image = UIImage(named: "mother.jpg")
+//            })
+//            
+//            
+//            
+            
+            self.fadeOut()
+            self.fadeIn()
+        }
 
+        
+        
     }
+    
+    func fadeIn(withDuration duration: TimeInterval = 1.0) {
+        UIView.animate(withDuration: duration, animations: {
+            self.imageVIew.image = UIImage(named: "mother.jpg")
+            self.imageVIew.alpha = 1.0
+        })
+    }
+    
+    /**
+     Fade out a view with a duration
+     
+     - parameter duration: custom animation duration
+     */
+    func fadeOut(withDuration duration: TimeInterval = 1.0) {
+        UIView.animate(withDuration: duration, animations: {
+            self.imageVIew.image = nil
+            self.imageVIew.alpha = 0.0
+        })
+    }
+    
+        
+    
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent

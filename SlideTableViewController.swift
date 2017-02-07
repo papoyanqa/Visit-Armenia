@@ -14,7 +14,7 @@ class SideBarSTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableArray = ["Home", "Nearby Places", "Monuments", "Shopping", "Restaurants and Cafes" , "Events", "Popular Itineraries", "Taxi", "Settings", "My Trip", "About"]
+        tableArray = ["Home", "Nearby Places", "Monuments", "Shopping", "Restaurants and Cafes" , "Events", "Popular Itineraries", "Taxi", "My Trip", "Settings", "About"]
     }
     
     override func didReceiveMemoryWarning() {
@@ -81,12 +81,12 @@ class SideBarSTableViewController: UITableViewController {
         
         if ((indexPath as NSIndexPath).row == 8) {
             cell.categoryName.text = tableArray[indexPath.row]
-            cell.iconView.image = UIImage(named: "Support_100px.png")
+            cell.iconView.image = UIImage(named: "Suitcase_100px.png")
         }   
         
         if ((indexPath as NSIndexPath).row == 9) {
             cell.categoryName.text = tableArray[indexPath.row]
-            cell.iconView.image = UIImage(named: "Suitcase_100px.png")
+            cell.iconView.image = UIImage(named: "Support_100px.png")
         }
         
         if ((indexPath as NSIndexPath).row == 10) {

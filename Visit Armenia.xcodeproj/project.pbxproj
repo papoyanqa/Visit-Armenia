@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		12DA1B011DEA23CF007DB683 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DA1B001DEA23CF007DB683 /* BaseNavigationController.swift */; };
-		21E080683779BE5AF19C284B /* Pods_Visit_Armenia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34934D254B10F747611DCE69 /* Pods_Visit_Armenia.framework */; };
+		21E080683779BE5AF19C284B /* Pods_Visit_Armenia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34934D254B10F747611DCE69 /* Pods_Visit_Armenia.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		49A9C7EB1DE88DC20066CBBE /* ViewDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9C7EA1DE88DC20066CBBE /* ViewDetailVC.swift */; };
 		49A9C7ED1DE8D0040066CBBE /* ViewDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9C7EC1DE8D0040066CBBE /* ViewDetailsCell.swift */; };
 		49A9C7EF1DE983D00066CBBE /* Garni_Temple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49A9C7EE1DE983D00066CBBE /* Garni_Temple.jpg */; };
@@ -252,9 +252,9 @@
 				57E9ADBD1DEDBF5100D211FC /* RestAndCafeVC.swift */,
 				57E9ADBF1DEDC06300D211FC /* RestAndCafeTVC.swift */,
 				57E9ADC11DEF1A4600D211FC /* MapViewController.swift */,
-				574C6DDE1DEF7A60000BD20E /* Networking */,
 				572F699F1E09714D00CD819B /* MonumentsVC.swift */,
 				570D71BC1E097C4300E310F2 /* MonumentCell.swift */,
+				574C6DDE1DEF7A60000BD20E /* Networking */,
 			);
 			path = "Visit Armenia";
 			sourceTree = "<group>";
@@ -704,6 +704,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = YAP92K26S3;
 				INFOPLIST_FILE = "Visit Armenia/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -723,6 +724,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = YAP92K26S3;
 				INFOPLIST_FILE = "Visit Armenia/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
