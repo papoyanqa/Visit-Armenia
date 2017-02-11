@@ -55,8 +55,8 @@ class SettingsVC: UIViewController {
     }    
 
     @IBAction func callPolice(_ sender: Any) {
-        if let url = URL(string: "tel://+\(37498937070)") {
-            UIApplication.shared.openURL(url)
+//        if let url = URL(string: "tel://+\(37498937070)") {
+//            UIApplication.shared.openURL(url)
         }
     }
-}
+

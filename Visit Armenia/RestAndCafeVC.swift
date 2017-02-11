@@ -10,12 +10,14 @@ import UIKit
 import GoogleMaps
 import GooglePlacePicker
 import GoogleMapsCore
+import SystemConfiguration
 
 class RestAndCafeTV: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var placesTV: UITableView!
     @IBOutlet weak var mapViewMain: UIView!
     @IBOutlet weak var slideMenu: UIBarButtonItem!
+    @IBOutlet weak var noConnectionView: UIImageView!
     
     
     var image: UIImage!
@@ -26,6 +28,16 @@ class RestAndCafeTV: UIViewController, UITableViewDelegate, UITableViewDataSourc
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if(isInternetAvailable() == false) {
+            noConnectionView.image = UIImage.init(named: "internet.png")
+        } else {
+            noConnectionView.image = nil
+        }
+        
+        
+        
+        
         navigationController?.navigationBar.barTintColor = UIColor(red: 246, green: 247, blue: 249, alpha: 1)
         locationManager.requestWhenInUseAuthorization()
         image = UIImage(named: "Menu_100px_1.png")
@@ -41,17 +53,17 @@ class RestAndCafeTV: UIViewController, UITableViewDelegate, UITableViewDataSourc
             self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
         }
 
-        OperationQueue.main.addOperation {
+//        OperationQueue.main.addOperation {
             let mapVC = MapViewController()
-            mapVC.latitude = 44.30
-            mapVC.longitude = 44.50
+            mapVC.latitude = self.locationManager.location?.coordinate.latitude
+            mapVC.longitude = self.locationManager.location?.coordinate.longitude
             self.addChildViewController(mapVC)
             mapVC.didMove(toParentViewController: self)
             mapVC.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
             mapVC.view.center = self.mapViewMain.center
             self.mapViewMain.autoresizesSubviews = true
             self.mapViewMain.addSubview(mapVC.view)
-        }
+//        }
         
         Networking.searchVenues(lat: (locationManager.location?.coordinate.latitude)!, lng: (locationManager.location?.coordinate.longitude)!, cat: "4d4b7105d754a06374d81259", completion: { (response: VenuesSearchModel?, error: Error?) in
             if response != nil {
@@ -124,7 +136,7 @@ class RestAndCafeTV: UIViewController, UITableViewDelegate, UITableViewDataSourc
             Networking.searchVenues(lat: (locationManager.location?.coordinate.latitude)!, lng: (locationManager.location?.coordinate.longitude)!, cat: "4d4b7105d754a06374d81259", completion: { (response: VenuesSearchModel?, error: Error?) in
                 if response != nil {
                     self.venuesSearch = response
-                    self.placesTV.reloadData()
+//                    self.placesTV.reloadData()
                     let mapVC = MapViewController()
                     let venue = self.venuesSearch.venues[indexPath.row]
                     mapVC.latitude = venue.lat
@@ -135,6 +147,27 @@ class RestAndCafeTV: UIViewController, UITableViewDelegate, UITableViewDataSourc
             
         }
         
+    }
+    
+    func isInternetAvailable() -> Bool
+    {
+        var zeroAddress = sockaddr_in()
+        zeroAddress.sin_len = UInt8(MemoryLayout.size(ofValue: zeroAddress))
+        zeroAddress.sin_family = sa_family_t(AF_INET)
+        
+        let defaultRouteReachability = withUnsafePointer(to: &zeroAddress) {
+            $0.withMemoryRebound(to: sockaddr.self, capacity: 1) {zeroSockAddress in
+                SCNetworkReachabilityCreateWithAddress(nil, zeroSockAddress)
+            }
+        }
+        
+        var flags = SCNetworkReachabilityFlags()
+        if !SCNetworkReachabilityGetFlags(defaultRouteReachability!, &flags) {
+            return false
+        }
+        let isReachable = (flags.rawValue & UInt32(kSCNetworkFlagsReachable)) != 0
+        let needsConnection = (flags.rawValue & UInt32(kSCNetworkFlagsConnectionRequired)) != 0
+        return (isReachable && !needsConnection)
     }
     
 }

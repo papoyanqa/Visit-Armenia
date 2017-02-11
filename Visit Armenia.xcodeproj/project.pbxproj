@@ -19,6 +19,7 @@
 		570D71C51E09CD3A00E310F2 /* echmiadzin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 570D71C41E09CD3A00E310F2 /* echmiadzin.jpg */; };
 		570D71C91E09D27D00E310F2 /* sargis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 570D71C81E09D27D00E310F2 /* sargis.jpg */; };
 		570D71CB1E09D65D00E310F2 /* gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 570D71CA1E09D65D00E310F2 /* gradient.png */; };
+		571B903E1E4CA66F00867D0B /* internet.png in Resources */ = {isa = PBXBuildFile; fileRef = 571B903D1E4CA66F00867D0B /* internet.png */; };
 		572F69A01E09714D00CD819B /* MonumentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572F699F1E09714D00CD819B /* MonumentsVC.swift */; };
 		573C61F21DD739040038ECE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573C61F11DD739040038ECE4 /* AppDelegate.swift */; };
 		573C61F41DD739040038ECE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573C61F31DD739040038ECE4 /* ViewController.swift */; };
@@ -66,6 +67,7 @@
 		573C625D1DD8AD870038ECE4 /* Suitcase_100px.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C62521DD8AD870038ECE4 /* Suitcase_100px.png */; };
 		573C625E1DD8AD870038ECE4 /* Support_100px.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C62531DD8AD870038ECE4 /* Support_100px.png */; };
 		573C625F1DD8AD870038ECE4 /* Taxi_100px.png in Resources */ = {isa = PBXBuildFile; fileRef = 573C62541DD8AD870038ECE4 /* Taxi_100px.png */; };
+		578D939D1E4A024E002ABD3D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 578D939C1E4A024E002ABD3D /* GoogleService-Info.plist */; };
 		57A85C111DDCB29400E33879 /* Idea_100px.png in Resources */ = {isa = PBXBuildFile; fileRef = 57A85C101DDCB29400E33879 /* Idea_100px.png */; };
 		57D745D41DEC8D2F002B9B75 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D745D31DEC8D2F002B9B75 /* Networking.swift */; };
 		57E41CE91DD9F356003F6485 /* Garni.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 57E41CE61DD9F356003F6485 /* Garni.jpg */; };
@@ -98,6 +100,7 @@
 		570D71C41E09CD3A00E310F2 /* echmiadzin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = echmiadzin.jpg; path = "Design elements/echmiadzin.jpg"; sourceTree = SOURCE_ROOT; };
 		570D71C81E09D27D00E310F2 /* sargis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sargis.jpg; path = "Design elements/sargis.jpg"; sourceTree = SOURCE_ROOT; };
 		570D71CA1E09D65D00E310F2 /* gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gradient.png; path = "Design elements/gradient.png"; sourceTree = SOURCE_ROOT; };
+		571B903D1E4CA66F00867D0B /* internet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = internet.png; sourceTree = "<group>"; };
 		572F699F1E09714D00CD819B /* MonumentsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonumentsVC.swift; sourceTree = "<group>"; };
 		573C61EE1DD739040038ECE4 /* Visit Armenia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Visit Armenia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		573C61F11DD739040038ECE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +153,7 @@
 		573C62531DD8AD870038ECE4 /* Support_100px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Support_100px.png; sourceTree = "<group>"; };
 		573C62541DD8AD870038ECE4 /* Taxi_100px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Taxi_100px.png; sourceTree = "<group>"; };
 		577A8EF11DFB543500F35EC2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		578D939C1E4A024E002ABD3D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		57A85C101DDCB29400E33879 /* Idea_100px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Idea_100px.png; sourceTree = "<group>"; };
 		57D745D31DEC8D2F002B9B75 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		57E41CE61DD9F356003F6485 /* Garni.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Garni.jpg; path = AppIcon.appiconset/Garni.jpg; sourceTree = "<group>"; };
@@ -229,31 +233,8 @@
 				573C62031DD7396C0038ECE4 /* Visit Armenia-Bridging-Header.h */,
 				573C61F51DD739050038ECE4 /* Main.storyboard */,
 				573C61F11DD739040038ECE4 /* AppDelegate.swift */,
-				573C62091DD73BF30038ECE4 /* SlideTableViewController.swift */,
-				573C61F31DD739040038ECE4 /* ViewController.swift */,
-				573C62071DD73A7C0038ECE4 /* HomeVC.swift */,
-				573C620B1DD895CA0038ECE4 /* ShoppingVC.swift */,
-				573C620D1DD895EB0038ECE4 /* NearbyPlacesVC.swift */,
-				573C623B1DD8A3620038ECE4 /* SlideTableViewCell.swift */,
-				573C623D1DD8A94D0038ECE4 /* EventsVC.swift */,
-				573C623F1DD8A9820038ECE4 /* PopularItinerariesVC.swift */,
-				573C62411DD8A9A70038ECE4 /* TaxiVC.swift */,
-				573C62431DD8A9CA0038ECE4 /* SettingsVC.swift */,
-				573C62471DD8AA050038ECE4 /* AboutVC.swift */,
-				57E41CED1DDB10C3003F6485 /* MyTripCollectionVC.swift */,
-				57E41CEF1DDB1220003F6485 /* MyTripCVcell.swift */,
-				49A9C7EA1DE88DC20066CBBE /* ViewDetailVC.swift */,
-				49A9C7EC1DE8D0040066CBBE /* ViewDetailsCell.swift */,
-				12DA1B001DEA23CF007DB683 /* BaseNavigationController.swift */,
-				57E9ADB51DECA6D900D211FC /* RestaurantsAndCafesTVC.swift */,
-				57E9ADB71DECA70A00D211FC /* RestaurantsAndCafesTVCell.swift */,
-				57E9ADB91DECAEE100D211FC /* PhotoModel.swift */,
-				57E9ADBB1DECC3B700D211FC /* Location.swift */,
-				57E9ADBD1DEDBF5100D211FC /* RestAndCafeVC.swift */,
-				57E9ADBF1DEDC06300D211FC /* RestAndCafeTVC.swift */,
-				57E9ADC11DEF1A4600D211FC /* MapViewController.swift */,
-				572F699F1E09714D00CD819B /* MonumentsVC.swift */,
-				570D71BC1E097C4300E310F2 /* MonumentCell.swift */,
+				578D939C1E4A024E002ABD3D /* GoogleService-Info.plist */,
+				578D939B1E4A0206002ABD3D /* View controllers */,
 				574C6DDE1DEF7A60000BD20E /* Networking */,
 			);
 			path = "Visit Armenia";
@@ -272,6 +253,7 @@
 				570D71C81E09D27D00E310F2 /* sargis.jpg */,
 				570D71C21E09CBDE00E310F2 /* geghard.jpg */,
 				570D71C01E09CBC600E310F2 /* mother.jpg */,
+				571B903D1E4CA66F00867D0B /* internet.png */,
 				573C62491DD8AD870038ECE4 /* Icons 2 */,
 				573C62141DD89E540038ECE4 /* AppIcon.appiconset */,
 				573C62121DD89DDB0038ECE4 /* First Loading Splashscreen.png */,
@@ -333,6 +315,38 @@
 			name = Networking;
 			sourceTree = "<group>";
 		};
+		578D939B1E4A0206002ABD3D /* View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				573C62091DD73BF30038ECE4 /* SlideTableViewController.swift */,
+				573C61F31DD739040038ECE4 /* ViewController.swift */,
+				573C62071DD73A7C0038ECE4 /* HomeVC.swift */,
+				573C620B1DD895CA0038ECE4 /* ShoppingVC.swift */,
+				573C620D1DD895EB0038ECE4 /* NearbyPlacesVC.swift */,
+				573C623B1DD8A3620038ECE4 /* SlideTableViewCell.swift */,
+				573C623D1DD8A94D0038ECE4 /* EventsVC.swift */,
+				573C623F1DD8A9820038ECE4 /* PopularItinerariesVC.swift */,
+				573C62411DD8A9A70038ECE4 /* TaxiVC.swift */,
+				573C62431DD8A9CA0038ECE4 /* SettingsVC.swift */,
+				573C62471DD8AA050038ECE4 /* AboutVC.swift */,
+				57E41CED1DDB10C3003F6485 /* MyTripCollectionVC.swift */,
+				57E41CEF1DDB1220003F6485 /* MyTripCVcell.swift */,
+				49A9C7EA1DE88DC20066CBBE /* ViewDetailVC.swift */,
+				49A9C7EC1DE8D0040066CBBE /* ViewDetailsCell.swift */,
+				12DA1B001DEA23CF007DB683 /* BaseNavigationController.swift */,
+				57E9ADB51DECA6D900D211FC /* RestaurantsAndCafesTVC.swift */,
+				57E9ADB71DECA70A00D211FC /* RestaurantsAndCafesTVCell.swift */,
+				57E9ADB91DECAEE100D211FC /* PhotoModel.swift */,
+				57E9ADBB1DECC3B700D211FC /* Location.swift */,
+				57E9ADBD1DEDBF5100D211FC /* RestAndCafeVC.swift */,
+				57E9ADBF1DEDC06300D211FC /* RestAndCafeTVC.swift */,
+				57E9ADC11DEF1A4600D211FC /* MapViewController.swift */,
+				572F699F1E09714D00CD819B /* MonumentsVC.swift */,
+				570D71BC1E097C4300E310F2 /* MonumentCell.swift */,
+			);
+			name = "View controllers";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -374,6 +388,11 @@
 						DevelopmentTeam = YAP92K26S3;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -402,6 +421,7 @@
 			files = (
 				570D71C31E09CBDE00E310F2 /* geghard.jpg in Resources */,
 				570D71CB1E09D65D00E310F2 /* gradient.png in Resources */,
+				578D939D1E4A024E002ABD3D /* GoogleService-Info.plist in Resources */,
 				573C622C1DD89E540038ECE4 /* Icon-App-29x29@2x.png in Resources */,
 				570D71C91E09D27D00E310F2 /* sargis.jpg in Resources */,
 				573C625F1DD8AD870038ECE4 /* Taxi_100px.png in Resources */,
@@ -442,6 +462,7 @@
 				573C622F1DD89E540038ECE4 /* Icon-App-40x40@2x.png in Resources */,
 				573C625B1DD8AD870038ECE4 /* Menu_100px_1.png in Resources */,
 				57E41CEA1DD9F356003F6485 /* Yerevan.jpg in Resources */,
+				571B903E1E4CA66F00867D0B /* internet.png in Resources */,
 				573C625D1DD8AD870038ECE4 /* Suitcase_100px.png in Resources */,
 				573C622B1DD89E540038ECE4 /* Icon-App-29x29@1x.png in Resources */,
 			);

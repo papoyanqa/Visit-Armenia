@@ -10,5 +10,6 @@ target 'Visit Armenia' do
     pod 'GoogleMaps'
     pod 'AlamofireObjectMapper', '~> 4.0'
     pod 'Kingfisher', '~> 3.0'
+    pod 'Firebase/Core'
     
 end

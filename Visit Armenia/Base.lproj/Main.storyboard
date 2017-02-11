@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -438,7 +438,7 @@
                                 <connections>
                                     <outlet property="categoryName" destination="ThT-vc-rQb" id="JUw-9s-lhy"/>
                                     <outlet property="iconView" destination="WJD-VS-LPD" id="RQk-9l-QV0"/>
-                                    <segue destination="wIk-pk-QFZ" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="wZH-pr-V1z"/>
+                                    <segue destination="wIk-pk-QFZ" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="YS7-HC-eM9"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="About" id="dgt-0y-z3H" customClass="SlideTableViewCell" customModule="Visit_Armenia" customModuleProvider="target">
@@ -472,6 +472,7 @@
                                 <connections>
                                     <outlet property="categoryName" destination="qGW-qf-cdo" id="QPT-J8-jVa"/>
                                     <outlet property="iconView" destination="kcG-Bt-Ddr" id="z5X-Bm-jYi"/>
+                                    <segue destination="mSL-EK-mxF" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="bU0-r8-Y15"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -484,6 +485,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LPU-c9-rom" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-954" y="1856"/>
+        </scene>
+        <!--AboutVC-->
+        <scene sceneID="SuI-ho-3q5">
+            <objects>
+                <viewController id="YXm-eB-sYE" customClass="AboutVC" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iXf-Yy-pzq"/>
+                        <viewControllerLayoutGuide type="bottom" id="kkK-S3-Ksa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nky-sA-LYs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="q4e-jV-O37">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="Dud-hV-RuG"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="slideMenu" destination="Dud-hV-RuG" id="lFA-As-JaC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9hU-Vh-T0o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924" y="2908.6956521739135"/>
         </scene>
         <!--NearbyPlacesVC-->
         <scene sceneID="CG4-Qz-iO9">
@@ -515,7 +540,7 @@
         <scene sceneID="3aQ-Xt-qyT">
             <objects>
                 <collectionViewController id="9Ig-5D-NdN" customClass="MonumentsVC" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" id="1mI-eC-vDi">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" pagingEnabled="YES" dataMode="prototypes" id="1mI-eC-vDi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -677,14 +702,24 @@
                                     <outlet property="delegate" destination="Gj0-CF-FFE" id="SBW-6Y-ZMT"/>
                                 </connections>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Communication-Tower-512.png" translatesAutoresizingMaskIntoConstraints="NO" id="fWG-YL-pkE">
+                                <rect key="frame" x="40" y="212" width="294" height="242"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fWG-YL-pkE" secondAttribute="height" multiplier="147:121" id="p1B-Ds-26U"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="XvP-0e-GGv" firstAttribute="top" secondItem="cdp-JH-DRl" secondAttribute="bottom" id="5iL-pQ-6mE"/>
                             <constraint firstItem="mKR-Tn-nwS" firstAttribute="top" secondItem="0td-Qy-eBl" secondAttribute="bottom" id="FFP-LU-HXl"/>
+                            <constraint firstAttribute="trailing" secondItem="fWG-YL-pkE" secondAttribute="trailing" constant="41" id="PGQ-iV-T8I"/>
                             <constraint firstItem="0td-Qy-eBl" firstAttribute="leading" secondItem="Rvl-eK-otk" secondAttribute="leading" id="QX9-8X-qcO"/>
+                            <constraint firstItem="fWG-YL-pkE" firstAttribute="leading" secondItem="Rvl-eK-otk" secondAttribute="leading" constant="40" id="S6E-Ka-wow"/>
                             <constraint firstAttribute="trailing" secondItem="XvP-0e-GGv" secondAttribute="trailing" id="TLm-m5-VX8"/>
+                            <constraint firstItem="mKR-Tn-nwS" firstAttribute="top" secondItem="fWG-YL-pkE" secondAttribute="bottom" constant="213" id="Zar-in-cIY"/>
                             <constraint firstAttribute="trailing" secondItem="0td-Qy-eBl" secondAttribute="trailing" id="f8M-bd-xml"/>
+                            <constraint firstItem="fWG-YL-pkE" firstAttribute="top" secondItem="Rvl-eK-otk" secondAttribute="top" constant="212" id="gy3-8v-qtT"/>
                             <constraint firstItem="XvP-0e-GGv" firstAttribute="leading" secondItem="Rvl-eK-otk" secondAttribute="leading" id="itA-a6-b67"/>
                             <constraint firstItem="0td-Qy-eBl" firstAttribute="top" secondItem="XvP-0e-GGv" secondAttribute="bottom" constant="8" id="zMJ-mz-KD9"/>
                         </constraints>
@@ -699,6 +734,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="mapViewMain" destination="XvP-0e-GGv" id="Lol-yb-WNY"/>
+                        <outlet property="noConnectionView" destination="fWG-YL-pkE" id="bl7-fp-FDl"/>
                         <outlet property="placesTV" destination="0td-Qy-eBl" id="LtW-c7-P9f"/>
                         <outlet property="slideMenu" destination="egb-4r-xn6" id="pKw-yj-J1b"/>
                     </connections>
@@ -723,6 +759,9 @@
                     <navigationItem key="navigationItem" id="k2B-kH-4yr">
                         <barButtonItem key="leftBarButtonItem" title="Item" id="wYJ-GE-Wpm"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="slideMenu" destination="wYJ-GE-Wpm" id="OA7-pd-IX8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BMQ-Pa-cqS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -747,7 +786,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P6T-7z-cn3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3072.8000000000002" y="2561.4692653673164"/>
+            <point key="canvasLocation" x="4951.1999999999998" y="2561.4692653673164"/>
         </scene>
         <!--TaxiVC-->
         <scene sceneID="Ayx-Jc-v4b">
@@ -778,7 +817,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kin-dk-Yfb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3050.4000000000001" y="3288.3058470764622"/>
+            <point key="canvasLocation" x="4928.8000000000002" y="3288.3058470764622"/>
         </scene>
         <!--SettingsVC-->
         <scene sceneID="xkf-fT-Nhd">
@@ -824,7 +863,7 @@
         <scene sceneID="OBX-dI-Iel">
             <objects>
                 <collectionViewController id="K2s-qJ-p31" customClass="MyTripCollectionVC" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="prototypes" id="ZfN-LE-QX5">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" dataMode="prototypes" id="ZfN-LE-QX5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.9370916485786438" green="0.93694382905960083" blue="0.95754462480545044" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -920,7 +959,7 @@
         <scene sceneID="ar6-L3-4a8">
             <objects>
                 <collectionViewController storyboardIdentifier="detailVC" id="NpZ-0o-AQw" customClass="ViewDetailVC" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" scrollEnabled="NO" dataMode="prototypes" id="fCk-vY-paF">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" scrollEnabled="NO" dataMode="prototypes" id="fCk-vY-paF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1016,7 +1055,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X5U-YS-qUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3048.8000000000002" y="5399.5502248875564"/>
+            <point key="canvasLocation" x="1305" y="5400"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="Kwm-Bg-4R4">
@@ -1042,7 +1081,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pgx-Dy-ZcF" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cga-aO-jeu">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Cga-aO-jeu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1060,7 +1099,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="02u-bh-Iax" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cft-Nc-CNz">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="cft-Nc-CNz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1078,7 +1117,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DPU-cm-Vp7" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6kT-Ma-q43">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6kT-Ma-q43">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1096,7 +1135,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ewi-qv-o8r" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pz0-Cv-hLS">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="pz0-Cv-hLS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1114,7 +1153,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BL3-Gv-eoR" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fe9-Fb-vIi">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="fe9-Fb-vIi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1132,7 +1171,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AQt-Ke-kVT" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bdp-4z-6dP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="bdp-4z-6dP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1150,7 +1189,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NNp-cl-v6r" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dcx-pD-PtV">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="dcx-pD-PtV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1161,14 +1200,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DrS-53-NmU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2133.5999999999999" y="2561.4692653673164"/>
+            <point key="canvasLocation" x="4012" y="2561.4692653673164"/>
         </scene>
         <!--Base Navigation Controller-->
         <scene sceneID="RC2-CQ-gQt">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b0y-wX-TdD" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rxn-9E-thF">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="rxn-9E-thF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1179,14 +1218,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OSt-Ad-l2y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2111.1999999999998" y="3288.3058470764622"/>
+            <point key="canvasLocation" x="3989.5999999999999" y="3288.3058470764622"/>
         </scene>
         <!--Base Navigation Controller-->
         <scene sceneID="r2n-2E-Bfi">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wIk-pk-QFZ" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qbr-cv-tnh">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="qbr-cv-tnh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1204,7 +1243,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e9o-xy-Qyd" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NKH-5J-Zrp">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NKH-5J-Zrp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1215,7 +1254,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8y5-Si-H2Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2109.5999999999999" y="5399.5502248875564"/>
+            <point key="canvasLocation" x="2713" y="5400"/>
         </scene>
         <!--ShoppingVC-->
         <scene sceneID="UAx-ZI-3Dk">
@@ -1316,7 +1355,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="V5J-BZ-cjD" customClass="BaseNavigationController" customModule="Visit_Armenia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MJD-6x-BAC">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="MJD-6x-BAC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1329,8 +1368,27 @@
             </objects>
             <point key="canvasLocation" x="7162.3999999999996" y="-222.63868065967017"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SN1-gZ-U0y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mSL-EK-mxF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="41e-WA-gfb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YXm-eB-sYE" kind="relationship" relationship="rootViewController" id="jal-KW-Cqs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="800-Qu-7F6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-15.199999999999999" y="2908.6956521739135"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Communication-Tower-512.png" width="512" height="512"/>
         <image name="gradient.png" width="600" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
